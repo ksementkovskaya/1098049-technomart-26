@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Кристина](https://up.htmlacademy.ru/htmlcss/26/user/1098049).
-* Наставник: `Неизвестно`.
+* Студент: [Кристина Сементковская](https://up.htmlacademy.ru/htmlcss/26/user/1098049).
+* Наставник: `Анна Рус`(https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 
