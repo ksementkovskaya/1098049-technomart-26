@@ -10,7 +10,7 @@
   <!--первый блок в шапке сайта обернула в тег div, т.к. оформление отличается от другого блока в шапке, именно фон блока-->
   <div>
   <a href="index.html">
-    <img src="img/logo.png" width="109" height="19" alt="Логотип «Техномарт»">
+      <span>Техномарт</span>
   </a>
   <!--В задании указано не размечать формы, для себя внесла, но понимаю, что форму еще буду дорабатывать-->
   <!--<form class="search" action="" method="post">
@@ -66,13 +66,28 @@
 </header>
   <main>
     <ul>
-      <li><a href="index.html"><img src="img/icon-home.svg" width="16" height="12" alt="Иконка для главной страницы"></a></li>
-      <li><a href="">Каталог</a></li>
-      <li><a href="">Инструмент</a></li>
+      <li><a href="index.html"><img src="img/icon-home.svg" width="16" height="12" alt="Иконка для главной страницы"></a>
+        <img src="img/icon-right-small.svg" width="8" height="14" alt="Иконка стрелка вправо"></li>
+      <li><a href="">Каталог</a>
+      <img src="img/icon-right-small.svg" width="8" height="14" alt="Иконка стрелка вправо"></li>
+      <li><a href="">Инструмент</a>
+      <img src="img/icon-right-small.svg" width="8" height="14" alt="Иконка стрелка вправо"></li>
       <li>Перфораторы</li>
     </ul>
     <section>
       <h2>Перфораторы</h2>
+      <div>
+        <h4>Сортировка:</h4>
+        <ul>
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По функционалу</li>
+          <li>
+            <img src="img/icon-up-dir.svg" width="11" height="10" alt="кнопка для фильтрования отбора по возрастанию">
+            <img src="img/icon-down-dir.svg" width="11" height="10" alt="кнопка для фильтрования отбора по убыванию">
+          </li>
+        </ul>
+      </div>
       <ul>
         <li>
           <h3>
@@ -240,10 +255,31 @@
           <button type="submit" name="bookmark">В закладки</button>
         </li>
       </ul>
+      <div>
+        <ul>
+          <li>1</li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">Следующая</a></li>
+        </ul>
+      </div>
     </section>
     <section>
-      <h3>Фильтр</h3><!--Этот загаловок будет скрыт-->
+      <h4>Пара слов о перфораторах</h4>
+      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+    </section>
+    <section>
       <!--Здесь начнется форма для фильтра и отбор по цене-->
+      <h4>Фильтр:</h4>
+      <label for="price">Цена:</label>
+      <div>
+        <img src="img/filter-button.svg" alt="кнопка ползунка">
+        <input type="range" id="price" name="price" min="0" max="30000" step="1">
+        <img src="img/filter-button.svg" alt="кнопка ползунка">
+      </div>
+      <span><input type="text" name="min price" value="0"></span>
+      <span>-</span>
+      <span><input type="text" name="max price" value="30000"></span>
       <h4>Производтели:</h4>
       <ul>
         <li>
@@ -335,7 +371,7 @@
     </section>
     <section>
       <h2>Добавление товара в корзину</h2>
-      <!--Зесь будет форма по добавлению товара в корзину-->
+      <!--Здесь будет форма по добавлению товара в корзину-->
     </section>
   </body>
 </html>
