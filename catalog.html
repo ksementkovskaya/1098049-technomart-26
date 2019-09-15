@@ -9,29 +9,28 @@
 <header>
   <!--первый блок в шапке сайта обернула в тег div, т.к. оформление отличается от другого блока в шапке, именно фон блока-->
   <div>
-  <a href="index.html">
+  <a href="index.html" aria-label="Ссылка ведет на главную страницу сайта">
       <span>Техномарт</span>
   </a>
-  <!--В задании указано не размечать формы, для себя внесла, но понимаю, что форму еще буду дорабатывать-->
-  <!--<form class="search" action="" method="post">
+  <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
     <img src="img/search.svg" alt="Иконка поиска">
-    <input type="search" name="search" value="Поиск:">
-  </form>-->
+    <input type="search" id="search-string" name="search-string" aria-label="Поле поиска" placeholder="Поиск:">
+  </form>
   <ul>
     <li>
-      <a href="">
-        <img src="img/icon-bookmark.svg" width="14" height="16" alt="Иконка закладки">Закладки:
+      <a href="" aria-label="Ссылка ведет на страницу избранного товара">
+        <img src="img/icon-bookmark.svg" width="14" height="16" alt="Изображение-иконка избранного товара">Закладки:
         <span>0</span>
         </a>
       </li>
       <li>
-        <a href="">
-          <img src="img/icon-cart.svg"  width="15" height="15" alt="Иконка корзины">Корзина:
+        <a href="" aria-label="Ссылка ведет на страницу избранного товара">
+          <img src="img/icon-cart.svg"  width="15" height="15" alt="Изображение-иконка избранного товара">Корзина:
           <span>10</span>
           </a>
       </li>
       <li>
-        <a href="">Оформить заказ:
+        <a href="" aria-label="Ссылка ведет на страницу оформления заказа">Оформить заказ:
         </a>
       </li>
     </ul>
@@ -39,39 +38,38 @@
 <!--Второй блок в шапке сайта обернула в div, т.к. фон отличается от первого бока. Внутри этого блока присутствует еще один блок с навигацией
 Возможно, лучше данный блок обернуть тегом section, но тогда нужно добавить заголовок, который будет скрыт на сайте, пока оставила так-->
 <div>
-  <!--На макете фраза, которую обернула в h1, должна быть видимой, поэтому тег h1 не скрывала -->
   <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-  <p><img src="img/icon-phone.svg" width="19" height="19" alt="Иконка телефона">+7 (812) 555-05-55</p>
+  <p><img src="img/icon-phone.svg" width="19" height="19" alt="Изображение-иконка телефона">+7 (812) 555-05-55</p>
   <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
   <p>
-    <a href=""><img src="img/icon-user.svg" width="22" height="18" alt="Иконка авторизированного пользователя">Равшан Джамшутович</a>
-    <a href=""><img src="img/icon-logout.svg" width="21" height="17" alt="Иконка выхода"></a>
+    <a href="" aria-label="Ссылка на профайл авторизованного пользователя"><img src="img/icon-user.svg" width="22" height="18" alt="Изображение-иконка авторизованного пользователя">Равшан Джамшутович</a>
+    <a href="" aria-label="Ссылка на страницу деавторизации"><img src="img/icon-logout.svg" width="21" height="17" alt="Изображение-иконка выхода"></a>
   </p>
     <ul>
-      <li><a href="">Мои заказы</a></li>
-      <li><a href="">Личный кабинет</a></li>
+      <li><a href="" aria-label="Ссылка на страницу мои заказы">Мои заказы</a></li>
+      <li><a href="" aria-label="Ссылка на страницу личного кабинета">Личный кабинет</a></li>
     </ul>
   <nav>
     <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="">Компания</a></li>
-      <li><a href="">Каталог</a></li>
-      <li><a href="">Новости</a></li>
-      <li><a href="">Спецпредложения</a></li>
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Контакты</a></li>
+      <li><a href="index.html" aria-label="Ссылка ведет на главную страницу">Главная</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу о компании">Компания</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу каталога">Каталог</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу новостей">Новости</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу спецпредложений">Спецпредложения</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу доставки">Доставка</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу контактов компании">Контакты</a></li>
     </ul>
   </nav>
 </div>
 </header>
   <main>
     <ul>
-      <li><a href="index.html"><img src="img/icon-home.svg" width="16" height="12" alt="Иконка для главной страницы"></a>
-        <img src="img/icon-right-small.svg" width="8" height="14" alt="Иконка стрелка вправо"></li>
-      <li><a href="">Каталог</a>
-      <img src="img/icon-right-small.svg" width="8" height="14" alt="Иконка стрелка вправо"></li>
-      <li><a href="">Инструмент</a>
-      <img src="img/icon-right-small.svg" width="8" height="14" alt="Иконка стрелка вправо"></li>
+      <li><a href="index.html" aria-label="Ссылка ведет на главную страницу"><img src="img/icon-home.svg" width="16" height="12" alt="Изображение-иконка главной страницы"></a>
+        <img src="img/icon-right-small.svg" width="8" height="14" alt="Изображение-иконка стрелки вправо"></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу каталога">Каталог</a>
+      <img src="img/icon-right-small.svg" width="8" height="14" alt="Изображение-иконка стрелки вправо"></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу инструментов">Инструмент</a>
+      <img src="img/icon-right-small.svg" width="8" height="14" alt="Изображение-иконка стрелки вправо"></li>
       <li>Перфораторы</li>
     </ul>
     <section>
@@ -83,184 +81,142 @@
           <li>По типу</li>
           <li>По функционалу</li>
           <li>
-            <img src="img/icon-up-dir.svg" width="11" height="10" alt="кнопка для фильтрования отбора по возрастанию">
-            <img src="img/icon-down-dir.svg" width="11" height="10" alt="кнопка для фильтрования отбора по убыванию">
+            <img src="img/icon-up-dir.svg" width="11" height="10" alt="Кнопка для фильтрования отбора по возрастанию">
+            <img src="img/icon-down-dir.svg" width="11" height="10" alt="Кнопка для фильтрования отбора по убыванию">
           </li>
         </ul>
       </div>
       <ul>
         <li>
-          <h3>
-            <a href="">
+          <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 3000">
+            <h3>
               <span>Перфоратор</span>
               <span>bosсh bfg 3000</span>
-            </a>
-          </h3>
-          <p>
-            <a href="">
-              <img src="img/perforator1.png" width="218" height="170" alt="Перфоратор bosсh bfg 3000">
-              <span>22500 Р.</span>
-              <span>15500 Р.</span>
-            </a>
-          </p>
-          <!--По ТЗ у любого товара может быть отметка "new", т.к. на макете по данному товару нет отметки, тег закомментила. Может правильней добавить атрибут hidden?-->
+            </h3>
+            <img src="img/perforator1.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 3000">
+            <span>22500 Р.</span>
+            <span>15500 Р.</span>
+          </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
         </li>
         <li>
-          <h3>
-            <a href="">
-              <span>Перфоратор</span>
-              <span>bosсh bfg 6000</span>
-            </a>
-          </h3>
-          <p>
-            <a href="">
-              <img src="img/perforator2.png" width="218" height="170" alt="Перфоратор bosсh bfg 6000">
+            <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 6000">
+              <h3>
+                <span>Перфоратор</span>
+                <span>bosсh bfg 6000</span>
+              </h3>
+              <img src="img/perforator2.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 6000">
               <span>30500 Р.</span>
               <span>25500 Р.</span>
             </a>
-          </p>
-          <!--По ТЗ у любого товара может быть отметка "new", т.к. на макете по данному товару нет отметки, тег закомментила. Может правильней добавить атрибут hidden?-->
-          <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+            <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
+            <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+            <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
         </li>
         <li>
-          <h3>
-            <a href="">
+          <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 2000">
+            <h3>
               <span>Перфоратор</span>
               <span>bosсh bfg 2000</span>
-            </a>
-          </h3>
-          <p>
-            <a href="">
-              <img src="img/perforator3.png" width="218" height="170" alt="Перфоратор bosсh bfg 2000">
-              <span>12500 Р.</span>
-            </a>
-          </p>
+            </h3>
+            <img src="img/perforator3.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 2000">
+            <span>12500 Р.</span>
+          </a>
           <span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
         </li>
         <li>
-          <h3>
-            <a href="">
+          <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 3000">
+            <h3>
               <span>Перфоратор</span>
               <span>bosсh bfg 3000</span>
-            </a>
-          </h3>
-          <p>
-            <a href="">
-              <img src="img/perforator1.png" width="218" height="170" alt="Перфоратор bosсh bfg 3000">
-              <span>22500 Р.</span>
-              <span>15500 Р.</span>
-            </a>
-          </p>
-          <!--По ТЗ у любого товара может быть отметка "new", т.к. на макете по данному товару нет отметки, тег закомментила.-->
+            </h3>
+            <img src="img/perforator1.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 3000">
+            <span>22500 Р.</span>
+            <span>15500 Р.</span>
+          </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
         </li>
         <li>
-          <h3>
-            <a href="">
-              <span>Перфоратор</span>
-              <span>bosсh bfg 6000</span>
-            </a>
-          </h3>
-          <p>
-            <a href="">
-              <img src="img/perforator2.png" width="218" height="170" alt="Перфоратор bosсh bfg 6000">
+            <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 6000">
+              <h3>
+                <span>Перфоратор</span>
+                <span>bosсh bfg 6000</span>
+              </h3>
+              <img src="img/perforator2.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 6000">
               <span>30500 Р.</span>
               <span>25500 Р.</span>
             </a>
-          </p>
-          <span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+            <span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>
+            <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+            <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
         </li>
         <li>
-          <h3>
-            <a href="">
+          <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 2000">
+            <h3>
               <span>Перфоратор</span>
               <span>bosсh bfg 2000</span>
-            </a>
-          </h3>
-          <p>
-            <a href="">
-              <img src="img/perforator3.png" width="218" height="170" alt="Перфоратор bosсh bfg 2000">
-              <span>12500 Р.</span>
-            </a>
-          </p>
-          <!--По ТЗ у любого товара может быть отметка "new", т.к. на макете по данному товару нет отметки, тег закомментила.-->
+            </h3>
+            <img src="img/perforator3.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 2000">
+            <span>12500 Р.</span>
+          </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
         </li>
         <li>
-          <h3>
-            <a href="">
+          <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 3000">
+            <h3>
               <span>Перфоратор</span>
               <span>bosсh bfg 3000</span>
-            </a>
-          </h3>
-          <p>
-            <a href="">
-              <img src="img/perforator1.png" width="218" height="170" alt="Перфоратор bosсh bfg 3000">
-              <span>22500 Р.</span>
-              <span>15500 Р.</span>
-            </a>
-          </p>
+            </h3>
+            <img src="img/perforator1.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 3000">
+            <span>22500 Р.</span>
+            <span>15500 Р.</span>
+          </a>
           <span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
         </li>
         <li>
-          <h3>
-            <a href="">
-              <span>Перфоратор</span>
-              <span>bosсh bfg 6000</span>
-            </a>
-          </h3>
-          <p>
-            <a href="">
-              <img src="img/perforator2.png" width="218" height="170" alt="Перфоратор bosсh bfg 6000">
+            <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 6000">
+              <h3>
+                <span>Перфоратор</span>
+                <span>bosсh bfg 6000</span>
+              </h3>
+              <img src="img/perforator2.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 6000">
               <span>30500 Р.</span>
               <span>25500 Р.</span>
             </a>
-          </p>
-          <!--По ТЗ у любого товара может быть отметка "new", т.к. на макете по данному товару нет отметки, тег закомментила. Может правильней добавить атрибут hidden?-->
-          <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+            <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
+            <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+            <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
         </li>
         <li>
-          <h3>
-            <a href="">
+          <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 2000">
+            <h3>
               <span>Перфоратор</span>
               <span>bosсh bfg 2000</span>
-            </a>
-          </h3>
-          <p>
-            <a href="">
-              <img src="img/perforator3.png" width="218" height="170" alt="Перфоратор BOSCH bfg 2000">
-              <span>12500 Р.</span>
-            </a>
-          </p>
-          <!--По ТЗ у любого товара может быть отметка "new", т.к. на макете по данному товару нет отметки, тег закомментила.-->
+            </h3>
+            <img src="img/perforator3.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 2000">
+            <span>12500 Р.</span>
+          </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
         </li>
       </ul>
       <div>
         <ul>
           <li>1</li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">Следующая</a></li>
+          <li><a href="" aria-label="Ссылка для перехода на вторую страницу каталога">2</a></li>
+          <li><a href="" aria-label="Ссылка для перехода на третью страницу каталога">3</a></li>
+          <li><a href="" aria-label="Ссылка для перехода на следующую страницу каталога">Следующая</a></li>
         </ul>
       </div>
     </section>
@@ -269,109 +225,140 @@
       <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </section>
     <section>
-      <!--Здесь начнется форма для фильтра и отбор по цене-->
       <h4>Фильтр:</h4>
-      <label for="price">Цена:</label>
-      <div>
-        <img src="img/filter-button.svg" alt="кнопка ползунка">
-        <input type="range" id="price" name="price" min="0" max="30000" step="1">
-        <img src="img/filter-button.svg" alt="кнопка ползунка">
-      </div>
-      <span><input type="text" name="min price" value="0"></span>
-      <span>-</span>
-      <span><input type="text" name="max price" value="30000"></span>
-      <h4>Производтели:</h4>
-      <ul>
-        <li>
-          <input type="checkbox" name="checkbox">
-          <img src="img/checkbox-on.svg" width="27" height="23" alt="установлен чекбокс">
-          <img src="img/checkbox-off.svg" width="23" height="23" alt="чекбокс не установлен">
-          Bosh</li>
-        <li>
-          <input type="checkbox" name="checkbox">
-          <img src="img/checkbox-on.svg" width="27" height="23" alt="установлен чекбокс">
-          <img src="img/checkbox-off.svg" width="23" height="23" alt="чекбокс не установлен">
-          Интерскол</li>
-        <li>
-          <input type="checkbox" name="checkbox">
-          <img src="img/checkbox-on.svg" width="27" height="23" alt="установлен чекбокс">
-          <img src="img/checkbox-off.svg" width="23" height="23" alt="чекбокс не установлен">
-          Makita</li>
-        <li>
-          <input type="checkbox" name="checkbox">
-          <img src="img/checkbox-on.svg" width="27" height="23" alt="установлен чекбокс">
-          <img src="img/checkbox-off.svg" width="23" height="23" alt="чекбокс не установлен">
-          Dewalt</li>
-        <li>
-          <input type="checkbox" name="checkbox">
-          <img src="img/checkbox-on.svg" width="27" height="23" alt="установлен чекбокс">
-          <img src="img/checkbox-off.svg" width="23" height="23" alt="чекбокс не установлен">
-          Hitachi</li>
-      </ul>
-      <h4>Питание:</h4>
-      <ul>
-        <li><input type="radio" name="radio">
-          <img src="img/radio-on.svg" width="25" height="25" alt="установлен чекбокс">
-          <img src="img/radio-off.svg" width="25" height="25" alt="чекбокс не установлен">
-          Аккумуляторные</li>
-        <li>
-          <input type="radio" name="radio">
-          <img src="img/radio-on.svg" width="25" height="25" alt="установлен чекбокс">
-          <img src="img/radio-off.svg" width="25" height="25" alt="чекбокс не установлен">
-          Сетевые</li>
-      </ul>
-      <button type="submit" name="submit">Показать</button>
+        <form class="filter" action="http://www.example.com/default.htm" method="get">
+          <fieldset>
+            <legend>Цена:</legend>
+            <img src="img/filter-button.svg" alt="кнопка ползунка">
+            <input type="range" name="price" min="0" max="30000" step="1" aria-label="Ползунок для выбора цены">
+            <img src="img/filter-button.svg" alt="кнопка ползунка">
+            <span><input type="text" name="min price" value="0" aria-label="Поле для ввода минимального значения цены"></span>
+            <span>-</span>
+            <span><input type="text" name="max price" value="30000" aria-label="Поле для ввода максимального значения цены"></span>
+              </fieldset>
+              <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input id="Bosh" class="visually-hidden" type="checkbox" name="Bosh">
+                    <img src="img/checkbox-on.svg" width="27" height="23" alt="установлен чекбокс">
+                    <img src="img/checkbox-off.svg" width="23" height="23" alt="чекбокс не установлен">
+                    <label for="Bosh">Bosh</label>
+                  </li>
+                  <li class="filter-option">
+                    <input id="Interscol" class="visually-hidden" type="checkbox" name="Interscol">
+                    <img src="img/checkbox-on.svg" width="27" height="23" alt="установлен чекбокс">
+                    <img src="img/checkbox-off.svg" width="23" height="23" alt="чекбокс не установлен">
+                    <label for="Interscol">Интерскол</label>
+                  </li>
+                  <li class="filter-option">
+                    <input id="Makita" class="visually-hidden" type="checkbox" name="Makita">
+                    <img src="img/checkbox-on.svg" width="27" height="23" alt="установлен чекбокс">
+                    <img src="img/checkbox-off.svg" width="23" height="23" alt="чекбокс не установлен">
+                    <label for="Makita">Makita</label>
+                  </li>
+                  <li class="filter-option">
+                    <input id="Dewalt" class="visually-hidden" type="checkbox" name="Dewalt">
+                    <img src="img/checkbox-on.svg" width="27" height="23" alt="установлен чекбокс">
+                    <img src="img/checkbox-off.svg" width="23" height="23" alt="чекбокс не установлен">
+                    <label for="Dewalt">Dewalt</label>
+                  </li>
+                  <li class="filter-option">
+                    <input id="Hitachi" class="visually-hidden" type="checkbox" name="Hitachi">
+                    <img src="img/checkbox-on.svg" width="27" height="23" alt="установлен чекбокс">
+                    <img src="img/checkbox-off.svg" width="23" height="23" alt="чекбокс не установлен">
+                    <label for="Hitachi">Hitachi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Питание:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input id="accumulator" class="visually-hidden" type="radio" name="radio">
+                    <img src="img/radio-on.svg" width="25" height="25" alt="установлен чекбокс">
+                    <img src="img/radio-off.svg" width="25" height="25" alt="чекбокс не установлен">
+                    <label for="accumulator">Аккумуляторные</label>
+                  </li>
+                  <li class="filter-option">
+                    <input id="net" class="visually-hidden" type="radio" name="radio">
+                    <img src="img/radio-on.svg" width="25" height="25" alt="установлен чекбокс">
+                    <img src="img/radio-off.svg" width="25" height="25" alt="чекбокс не установлен">
+                    <label for="net">Сетевые</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit" name="show" aria-label="Кнопка для вывода товара по выбранным фильтрам">Показать</button>
+        </form>
     </section>
   </main>
     <footer>
       <div>
-        <a>
-          <img src="img/logo.png" width="138" height="23" alt="Логотип «Техномарт»">
+        <a href="index.html" aria-label="Ссылка ведет на главную страницу сайта">
+            <span>Техномарт</span>
         </a>
         <ul>
-          <li><a href="">Компания</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="">Каталог</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="" aria-label="Ссылка ведет на страницу о компании">Компания</a></li>
+          <li><a href="" aria-label="Ссылка ведет на страницу новостей">Новости</a></li>
+          <li><a href="catalog.html" aria-label="Ссылка ведет на страницу каталога">Каталог</a></li>
+          <li><a href="" aria-label="Ссылка ведет на страницу доставки">Доставка</a></li>
+          <li><a href="" aria-label="Ссылка ведет на страницу контактов компании">Контакты</a></li>
         </ul>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
         <ul>
-          <li><a href="">Материалы</a></li>
-          <li><a href="">Техника</a></li>
-          <li><a href="">Инструмент</a></li>
-          <li><a href="">Спецпредложения</a></li>
+          <li><a href="" aria-label="Ссылка ведет на страницу метериалов">Материалы</a></li>
+          <li><a href="" aria-label="Ссылка ведет на страницу техники">Техника</a></li>
+          <li><a href="" aria-label="Ссылка ведет на страницу инструментов">Инструмент</a></li>
+          <li><a href="" aria-label="Ссылка ведет на страницу спецпредложений">Спецпредложения</a></li>
         </ul>
       </div>
       <div>
         <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-          <ul>
-            <li>
-              <a href=""><img src="img/icon-vk.svg" width="27" height="16" alt="Иконка вконтакте"></a>
-            </li>
-            <li>
-              <a href=""><img src="img/icon-fb.svg" width="12" height="22" alt="Иконка facebook"></a>
-            </li>
-            <li>
-              <a href=""><img src="img/icon-insta.svg" width="21" height="21" alt="Иконка instagram"></a>
-            </li>
-          </ul>
+        <ul>
+          <li>
+            <a href="" aria-label="Ссылка ведет на страницу компании во вконтакте"><img src="img/icon-vk.svg" width="27" height="16" alt="Изображение-иконка вконтакте"></a>
+          </li>
+          <li>
+            <a href="" aria-label="Ссылка ведет на страницу компании в facebook"><img src="img/icon-fb.svg" width="12" height="22" alt="Изображение-иконка facebook"></a>
+          </li>
+          <li>
+            <a href="" aria-label="Ссылка ведет на страницу компании в instagram"><img src="img/icon-insta.svg" width="21" height="21" alt="Изображение-иконка instagram"></a>
+          </li>
+        </ul>
     <p>Обратная связь: mail@htmlacademy.ru</p>
     <p>Разработано —
-      <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка ведет на страницу профессионального онлайн‑курса HTML и CSS, уровень 1">htmlacademy.ru</a></p>
     </div>
     </footer>
     <section>
       <h2>Вход в личный кабинет</h2>
-      <!--Здесь будет форма личного кабинета-->
+      <form class="login-form" action="http://www.example.com/default.htm" method="post">
+        <p>
+          <label for="login-user">Логин</label><input id="login-user" class="login-user" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label for="login-password">Пароль</label>
+          <input id="login-password" class="login-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p>
+          <input id="login-password-info" class="login-password-info" type="checkbox" name="remember"><label for="login-password-info">Запомни меня</label>
+          <a class="restore" href="" aria-label="Ссылка ведет на страницу восстановления пароля">Забыли пароль</a>
+        </p>
+        <button type="button" name="close" aria-label="Кнопка, чтобы закрыть форму входа в личный кабинет"><img src="img/icon-close.svg" width="21" height="21" alt="Рисунок - крестик для закрытия формы"></button>
+        <button type="submit" name="login" aria-label="Кнопка для входа в личный кабинет">Войти</button>
+      </form>
     </section>
     <section>
       <h2>Регистрация пользователя</h2>
       <!--Здесь будет форма для регистрации нового пользователя-->
     </section>
     <section>
-      <h2>Добавление товара в корзину</h2>
-      <!--Здесь будет форма по добавлению товара в корзину-->
+      <h2 class="visually-hidden">Товар добавлен в корзину</h2>
+        <p><img src="img/icon-mark.svg" alt="Изображение-иконка добавления">Товар добавлен в корзину!</p>
+        <button type="button" name="close" aria-label="Кнопка, чтобы закрыть форму добавленого товара в корзину"><img src="img/icon-close.svg" width="21" height="21" alt="Рисунок - крестик для закрытия формы"></button>
+        <a href="" aria-label="Ссылка ведет на страницу оформления заказа">Оформить заказ:</a>
+        <button type="button" name="continue-shopping" aria-label="Кнопка закрывает форму добавленного товара в корзину">Продолжить покупки</button>
+      </form>
     </section>
   </body>
 </html>

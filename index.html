@@ -12,26 +12,25 @@
   <a>
     <span>Техномарт</span>
   </a>
-  <!--В задании указано не размечать формы, для себя внесла, но понимаю, что форму еще буду дорабатывать-->
-  <!--<form class="search" action="" method="post">
-    <img src="img/icon-search.svg" width="17" height="17" alt="Иконка поиска">
-    <input type="search" name="search" value="Поиск:">
-  </form>-->
+  <form class="search-form" action="http://www.example.com/default.htm" method="post">
+    <img src="img/search.svg" alt="Изображение-иконка поиска">
+    <input type="search" id="search-string" name="search-string" aria-label="Поле поиска" placeholder="Поиск:">
+  </form>
   <ul>
     <li>
-      <a href="">
-        <img src="img/icon-bookmark.svg" width="14" height="16" alt="Иконка закладки">Закладки:
+      <a href="" aria-label="Ссылка ведет на страницу избранного товара">
+        <img src="img/icon-bookmark.svg" width="14" height="16" alt="Изображение-иконка избранного товара">Закладки:
         <span>0</span>
         </a>
       </li>
       <li>
-        <a href="">
-          <img src="img/icon-cart.svg"  width="15" height="15" alt="Иконка корзины">Корзина:
+        <a href="" aria-label="Ссылка ведет на страницу корзины">
+          <img src="img/icon-cart.svg"  width="15" height="15" alt="Изображение-иконка корзины">Корзина:
           <span>0</span>
           </a>
       </li>
       <li>
-        <a href="">Оформить заказ:
+        <a href="" aria-label="Ссылка ведет на страницу оформления заказа">Оформить заказ:
         </a>
       </li>
     </ul>
@@ -39,154 +38,137 @@
   <!--Второй блок в шапке сайта обернула в div, т.к. фон отличается от первого бока. Внутри этого блока присутствует еще один блок с навигацией
   Возможно, лучше данный блок обернуть тегом section, но тогда нужно добавить заголовок, который будет скрыт на сайте, пока оставила так-->
 <div>
-  <!--На макете фраза, которую обернула в h1, должна быть видимой, поэтому тег h1 не скрывала -->
   <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-  <p><img src="img/icon-phone.svg" width="19" height="19" alt="Иконка телефона">+7 (812) 555-05-55</p>
+  <p><img src="img/icon-phone.svg" width="19" height="19" alt="Изображение-иконка телефона">+7 (812) 555-05-55</p>
   <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
   <ul>
     <li>
-      <button type="button" name="login"><img src="img/icon-login.svg" width="21" height="17" alt="Иконка входа авторизированным пользователем">Войти</button>
+      <button type="button" name="login" aria-label="Кнопка для входа на сайт авторизованным пользователем"><img src="img/icon-login.svg" width="21" height="17" alt="Изображение-иконка входа авторизованным пользователем">Войти</button>
     </li>
     <li>
-      <button type="button" name="registration">Регистрация</button>
+      <button type="button" name="registration" aria-label="Кнопка для регистрации на сайте">Регистрация</button>
     </li>
   </ul>
   <nav>
     <ul>
       <li>Главная</li>
-      <li><a href="">Компания</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="">Новости</a></li>
-      <li><a href="">Спецпредложения</a></li>
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Контакты</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу о компании">Компания</a></li>
+      <li><a href="catalog.html" aria-label="Ссылка ведет на страницу кталога">Каталог</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу новостей">Новости</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу спецпредложений">Спецпредложения</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу доставки">Доставка</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу контактов компании">Контакты</a></li>
     </ul>
   </nav>
 </div>
 </header>
 <main>
   <section>
-    <h2 hidden>Промоблок</h2>
+    <h2 class="visually-hidden">Промоблок</h2>
     <div>
       <h3>Материалы</h3>
-      <img src="img/icon-material.svg" width="44" height="65" alt="Иконка материалы">
+      <img src="img/icon-material.svg" width="44" height="65" alt="Изображение-иконка материалы">
       <span><img src="img/new-flag.png" width="60" height="59" alt="Отметка новинка"></span>
-      <a href="">На любой вкус</a>
+      <a href="" aria-label="Ссылка ведет на страницу каталога">На любой вкус</a>
     </div>
     <div>
       <h3>Инструмент</h3>
-      <img src="img/icon-tool.svg" width="75" height="61" alt="Иконка инструмента">
-      <a href="">На все случаи</a>
+      <img src="img/icon-tool.svg" width="75" height="61" alt="Изображение-иконка инструмента">
+      <a href="" aria-label="Ссылка ведет на страницу каталога">На все случаи</a>
     </div>
     <div>
       <h3>Техника</h3>
-      <img src="img/icon-equipment.svg" width="78" height="62" alt="Иконка спец.техники">
-      <a href="">Для стройки</a>
+      <img src="img/icon-equipment.svg" width="78" height="62" alt="Изображение-иконка спец.техники">
+      <a href="" aria-label="Ссылка ведет на страницу каталога">Для стройки</a>
     </div>
     <div>
       <h3>Скидки</h3>
-      <img src="img/icon-bascet.svg" width="59" height="73" alt="Иконка корзины">
-      <a href="">На 350 товаров</a>
+      <img src="img/icon-bascet.svg" width="59" height="73" alt="Изображение-иконка корзины">
+      <a href="" aria-label="Ссылка ведет на страницу каталога">На 350 товаров</a>
     </div>
     <div>
       <h3>Доставка</h3>
-      <img src="img/icon-delivery.svg" width="78" height="63" alt="Иконка грузовика">
+      <img src="img/icon-delivery.svg" width="78" height="63" alt="Изображение-иконка грузовика">
       <a href="">Бесплатно</a>
     </div>
     <div class="slider">
       <h3>Дрели</h3>
       <p>Соседям на радость!</p>
-      <img src="icon-left.svg" width="22" height="40" alt="Иконка, чтобы нажать влево, для изменения изобажения">
-      <img src="icon-right.svg" width="22" height="40" alt="Иконка, чтобы нажатиь вправо, для изменения изобажения">
-      <a href="catalog.html">Открыть каталог</a>
-      <label><input type="radio" id="btn1" name="toggle"></label>
-      <label><input type="radio" id="btn2" name="toggle" checked></label>
+      <h3 class="visually-hidden">Слайдер</h3>
+      <img src="icon-left.svg" width="22" height="40" alt="Изображение-иконка, чтобы нажать влево, для изменения изобажения">
+      <img src="icon-right.svg" width="22" height="40" alt="Изображение-иконка, чтобы нажатиь вправо, для изменения изобажения">
+      <a href="catalog.html" aria-label="Ссылка ведет на страницу каталога">Открыть каталог</a>
+      <label><input type="radio" id="btn1" name="toggle" aria-label="радио кнопка для смены изображения"></label>
+      <label><input type="radio" id="btn2" name="toggle" aria-label="радио кнопка для смены изображения" checked></label>
         <div class="slider-inner">
           <div class="slider-slides">
-            <img src="img/slider1.jpg" width="620" height="266" alt="Человек просвериливает ванеру">
-            <img src="img/slider2.jpg" width="620" height="266" alt="человек просвериливает кирпичную стену">
+            <img src="img/slider1.jpg" width="620" height="266" alt="Изображение - человек просвериливает фанеру перфоратором">
+            <img src="img/slider2.jpg" width="620" height="266" alt="Изображение - человек просвериливает кирпичную стену перфоратором">
           </div>
         </div>
       </div>
   </section>
   <section>
-    <h2>Популярные товары <a href="">Все популярные товары</a></h2>
+    <h2>Популярные товары <a href="" aria-label="Ссылка ведет на страницу каталога популярных товаров">Все популярные товары</a></h2>
     <ul>
       <li>
-        <h3>
-          <a href="">
+        <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 9000">
+          <h3>
             <span>Перфоратор</span>
             <span>bosсh bfg 9000</span>
-          </a>
-        </h3>
-        <p>
-          <a href="">
-            <img src="img/perforator4.png" width="218" height="170" alt="Перфоратор bosсh bfg 9000">
-            <span>32500 Р.</span>
-            <span>25500 Р.</span>
-          </a>
-        </p>
+          </h3>
+          <img src="img/perforator4.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 9000">
+          <span>32500 Р.</span><span>25500 Р.</span>
+        </a>
         <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-        <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-        <button type="submit" name="bookmark">В закладки</button>
+        <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+        <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
       </li>
       <li>
-        <h3>
-        <a href="">
-          <span>Перфоратор</span>
-          <span>bosсh bfg 3000</span>
-        </a>
-      </h3>
-      <p>
-        <a href="">
-          <img src="img/perforator1.png" width="218" height="170" alt="Перфоратор bosсh bfg 3000">
+        <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 3000">
+          <h3>
+            <span>Перфоратор</span>
+            <span>bosсh bfg 3000</span>
+          </h3>
+          <img src="img/perforator1.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 3000">
           <span>22500 Р.</span>
           <span>15500 Р.</span>
         </a>
-      </p>
-      <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-      <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-      <button type="submit" name="bookmark">В закладки</button>
+        <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
+        <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+        <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
       </li>
       <li>
-        <h3>
-          <a href="">
-            <span>Перфоратор</span>
-            <span>bosсh bfg 6000</span>
-          </a>
-        </h3>
-        <p>
-          <a href="">
-            <img src="img/perforator2.png" width="218" height="170" alt="Перфоратор bosсh bfg 6000">
+          <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 6000">
+            <h3>
+              <span>Перфоратор</span>
+              <span>bosсh bfg 6000</span>
+            </h3>
+            <img src="img/perforator2.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 6000">
             <span>30500 Р.</span>
             <span>25500 Р.</span>
           </a>
-        </p>
-        <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-        <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-        <button type="submit" name="bookmark">В закладки</button>
+          <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
+          <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
       </li>
       <li>
-        <h3>
-          <a href="">
+        <a href="" aria-label="Ссылка ведет на страницу перфоратора Bosсh bfg 2000">
+          <h3>
             <span>Перфоратор</span>
             <span>bosсh bfg 2000</span>
-          </a>
-        </h3>
-        <p>
-          <a href="">
-            <img src="img/perforator3.png" width="218" height="170" alt="Перфоратор bosсh bfg 2000">
-            <span>12500 Р.</span>
-          </a>
-        </p>
+          </h3>
+          <img src="img/perforator3.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 2000">
+          <span>12500 Р.</span>
+        </a>
         <span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>
-        <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Иконка корзины">Купить</button>
-        <button type="submit" name="bookmark">В закладки</button>
+        <button type="button" name="cart" aria-label="Кнопка для добавления товара в корзину"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+        <button type="submit" name="bookmark" aria-label="Кнопка для добавления товара в избранное">В закладки</button>
       </li>
     </ul>
   </section>
   <section>
-    <h2>Популярные производители <a href="">Все производители</a></h2>
+    <h2>Популярные производители <a href="" aria-label="Ссылка ведет на страницу производителей продукции товаров">Все производители</a></h2>
     <ul>
       <li><img src="img/bosch.png" width="126" height="37" alt="Эмблема марки Bosch"></li>
       <li><img src="img/makita.png" width="123" height="40" alt="Эмблема марки Makita"></li>
@@ -222,62 +204,103 @@
       <li>Автотрейдин</li>
       <li>ЖелДорЭкспедиция</li>
     </ul>
-    <a href="">Подробнее о компании</a>
+    <a href="" aria-label="Ссылка ведет на страницу о компании">Подробнее о компании</a>
   </section>
   <section>
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис:
-      <a href=""><img src="img/Map.png" width="300" height="158" alt="Изображение магазина на карте">
+      <a href=""><img src="img/Map.png" width="300" height="158" alt="Изображение магазина на карте: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
       </a>
     </p>
-    <button type="button" name="writetous">Заблудились? Напишите нам!</button>
+    <button type="button" name="writetous" aria-label="Кнопка для заполнения формы обратной связи">Заблудились? Напишите нам!</button>
 </section>
 </main>
 <footer>
   <div>
     <a>
-      <img src="img/logo.png" width="138" height="23" alt="Логотип «Техномарт»">
+      <span>Техномарт</span>
     </a>
     <ul>
-      <li><a href="">Компания</a></li>
-      <li><a href="">Новости</a></li>
-      <li><a href="">Каталог</a></li>
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Контакты</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу о компании">Компания</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу новостей">Новости</a></li>
+      <li><a href="catalog.html" aria-label="Ссылка ведет на страницу каталога">Каталог</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу доставки">Доставка</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу контактов компании">Контакты</a></li>
     </ul>
     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
     <ul>
-      <li><a href="">Материалы</a></li>
-      <li><a href="">Техника</a></li>
-      <li><a href="">Инструмент</a></li>
-      <li><a href="">Спецпредложения</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу метериалов">Материалы</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу техники">Техника</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу инструментов">Инструмент</a></li>
+      <li><a href="" aria-label="Ссылка ведет на страницу спецпредложений">Спецпредложения</a></li>
     </ul>
   </div>
   <div>
     <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
       <ul>
         <li>
-          <a href=""><img src="img/icon-vk.svg" width="27" height="16" alt="Иконка вконтакте"></a>
+          <a href="" aria-label="Ссылка ведет на страницу компании во вконтакте"><img src="img/icon-vk.svg" width="27" height="16" alt="Изображение-иконка вконтакте"></a>
         </li>
         <li>
-          <a href=""><img src="img/icon-fb.svg" width="12" height="22" alt="Иконка facebook"></a>
+          <a href="" aria-label="Ссылка ведет на страницу компании в facebook"><img src="img/icon-fb.svg" width="12" height="22" alt="Изображение-иконка facebook"></a>
         </li>
         <li>
-          <a href=""><img src="img/icon-insta.svg" width="21" height="21" alt="Иконка instagram"></a>
+          <a href="" aria-label="Ссылка ведет на страницу компании в instagram"><img src="img/icon-insta.svg" width="21" height="21" alt="Изображение-иконка instagram"></a>
         </li>
       </ul>
 <p>Обратная связь: mail@htmlacademy.ru</p>
 <p>Разработано —
-  <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+  <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка ведет на страницу профессионального онлайн‑курса HTML и CSS, уровень 1">htmlacademy.ru</a></p>
 </div>
 </footer>
 <section>
   <h2>Вход в личный кабинет</h2>
-  <!--Здесь будет форма личного кабинета-->
+  <form class="login-form" action="http://www.example.com/default.htm" method="post">
+    <p>
+      <label for="login-user">Логин</label><input id="login-user" class="login-user" type="text" name="login" placeholder="Логин">
+    </p>
+    <p>
+      <label for="login-password">Пароль</label>
+      <input id="login-password" class="login-password" type="password" name="password" placeholder="Пароль">
+    </p>
+    <p>
+      <input id="login-password-info" class="login-password-info" type="checkbox" name="remember"><label for="login-password-info">Запомни меня</label>
+      <a class="restore" href="" aria-label="Ссылка ведет на страницу восстановления пароля">Забыли пароль</a>
+    </p>
+    <button type="button" name="close" aria-label="Кнопка, чтобы закрыть форму входа в личный кабинет"><img src="img/icon-close.svg" width="21" height="21" alt="Рисунок - крестик для закрытия формы"></button>
+    <button type="submit" name="login" aria-label="Кнопка для входа в личный кабиент">Войти</button>
+  </form>
 </section>
 <section>
   <h2>Регистрация пользователя</h2>
   <!--Здесь будет форма для регистрации нового пользователя-->
+</section>
+<section>
+  <h2 class="visually-hidden">Форма обратной связи</h2>
+  <form class="feedback-form" action="http://www.example.com/default.htm" method="post">
+    <p class="feedback-item">
+    <label for="feedback-name">Ваше имя:</label>
+    <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+  </p>
+  <p class="feedback-item">
+    <label for="feedback-mail">Ваш e-mail:</label>
+    <input id="feedback-mail" type="text" name="email" placeholder="email@example.com">
+  </p>
+  <p class="feedback-item">
+    <label for="feedback-text">Текст письма:</label>
+    <input id="feedback-text" type="text" name="text" placeholder="В свободной форме">
+  </p>
+  <button type="button" name="close" aria-label="Кнопка, чтобы закрыть форму обратной связи"><img src="img/icon-close.svg" width="21" height="21" alt="Рисунок - крестик для закрытия формы"></button>
+  <button type="submit" name="send" aria-label="Кнопка для отправки формы обратной связи">Отправить</button>
+  </form>
+</section>
+<section>
+  <h2 class="visually-hidden">Товар добавлен в корзину</h2>
+    <p><img src="img/icon-mark.svg" alt="Изображение-иконка добавления">Товар добавлен в корзину!</p>
+    <button type="button" name="close" aria-label="Кнопка, чтобы закрыть форму добавленого товара в корзину"><img src="img/icon-close.svg" width="21" height="21" alt="Рисунок - крестик для закрытия формы"></button>
+    <a href="" aria-label="Ссылка ведет на страницу оформления заказа">Оформить заказ:</a>
+    <button type="button" name="continue-shopping" aria-label="Кнопка закрывает форму добавленного товара в корзину">Продолжить покупки</button>
+  </form>
 </section>
   </body>
 </html>
