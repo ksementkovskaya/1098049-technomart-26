@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i,PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap" rel="stylesheet">
   <link href="/css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -82,12 +82,12 @@
     </ul>
     <section>
       <h2 class="hammer-drill">Перфораторы</h2>
-      <div>
+      <div class="sorting">
         <h4>Сортировка:</h4>
         <ul>
-          <li><a href="">По цене</a></li>
-          <li><a href="">По типу</a></li>
-          <li><a href="">По функционалу</a></li>
+          <li><a class="type-sorting" href="">По цене</a></li>
+          <li><a class="type-sorting" href="">По типу</a></li>
+          <li><a class="type-sorting" href="">По функционалу</a></li>
           <li>
             <a href=""><img src="img/icon-up-dir.svg" width="11" height="10" alt="Кнопка отбора по возрастанию"></a>
             <a href=""><img src="img/icon-down-dir.svg" width="11" height="10" alt="Кнопка отбора по убыванию"></a>
@@ -219,21 +219,21 @@
           <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
       </ul>
-      <div>
+      <div class="pagination">
         <ul>
-          <li>1</li>
-          <li><a href="" aria-label="Переход на вторую страницу каталога">2</a></li>
-          <li><a href="" aria-label="Переход на третью страницу каталога">3</a></li>
-          <li><a href="" aria-label="Переход на следующую страницу каталога">Следующая</a></li>
+          <li class="pagination-list">1</li>
+          <li><a class="pagination-list" href="" aria-label="Переход на вторую страницу каталога">2</a></li>
+          <li><a class="pagination-list" href="" aria-label="Переход на третью страницу каталога">3</a></li>
+          <li><a class="pagination-list" href="" aria-label="Переход на следующую страницу каталога">Следующая</a></li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="about-drill">
       <h4>Пара слов о перфораторах</h4>
       <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
         шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </section>
-    <section>
+    <section class="filter-block">
       <h4>Фильтр:</h4>
       <form class="filter" action="http://www.example.com/default.htm" method="get">
         <fieldset>

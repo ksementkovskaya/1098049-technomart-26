@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i,PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap" rel="stylesheet">
   <link href="/css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -67,30 +67,30 @@
     </div>
   </header>
   <main>
-    <section>
+    <section class="promoblock">
       <h2 class="visually-hidden">Промоблок</h2>
-      <div>
+      <div class="material">
         <h3>Материалы</h3>
         <img src="img/icon-material.svg" width="44" height="65" alt="Изображение-иконка материалы">
         <span><img src="img/new-flag.png" width="60" height="59" alt="Отметка новинка"></span>
-        <a href="">На любой вкус</a>
+        <a class="every-taste" href="">На любой вкус</a>
       </div>
-      <div>
+      <div class="tools">
         <h3>Инструмент</h3>
         <img src="img/icon-tool.svg" width="75" height="61" alt="Изображение-иконка инструмента">
         <a href="">На все случаи</a>
       </div>
-      <div>
+      <div class="technics">
         <h3>Техника</h3>
         <img src="img/icon-equipment.svg" width="78" height="62" alt="Изображение-иконка спец.техники">
         <a href="">Для стройки</a>
       </div>
-      <div>
+      <div class="discounts">
         <h3>Скидки</h3>
         <img src="img/icon-bascet.svg" width="59" height="73" alt="Изображение-иконка корзины">
         <a href="">На 350 товаров</a>
       </div>
-      <div>
+      <div class="about-delivery">
         <h3>Доставка</h3>
         <img src="img/icon-delivery.svg" width="78" height="63" alt="Изображение-иконка грузовика">
         <a href="">Бесплатно</a>
@@ -99,9 +99,9 @@
         <h3>Дрели</h3>
         <p>Соседям на радость!</p>
         <h4 class="visually-hidden">Слайдер</h4>
-        <img src="icon-left.svg" width="22" height="40" alt="На изображени стрелка влево">
-        <img src="icon-right.svg" width="22" height="40" alt="На изображении стрелка вправо">
-        <a href="catalog.html" aria-label="Ссылка ведет на страницу каталога">Открыть каталог</a>
+        <img src="img/icon-left.svg" width="22" height="40" alt="На изображени стрелка влево">
+        <img src="img/icon-right.svg" width="22" height="40" alt="На изображении стрелка вправо">
+        <a class="open-catalog" href="catalog.html" aria-label="Ссылка ведет на страницу каталога">Открыть каталог</a>
         <label><input type="radio" id="btn1" name="toggle" aria-label="радио кнопка для смены изображения"></label>
         <label><input type="radio" id="btn2" name="toggle" aria-label="радио кнопка для смены изображения" checked></label>
         <div class="slider-inner">
@@ -113,67 +113,67 @@
       </div>
     </section>
     <section>
-      <h2>Популярные товары <a href="">Все популярные товары</a></h2>
+      <h2 class="popular">Популярные товары <a href="">Все популярные товары</a></h2>
       <ul>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 9000</span>
+              <span class="number">bosсh bfg 9000</span>
             </h3>
             <img src="img/perforator4.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 9000">
-            <span>32500 Р.</span>
-            <span>25500 Р.</span>
+            <span class="discount">32500 Р.</span>
+            <span class="price">25500 Р.</span>
           </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 3000</span>
+              <span class="number">bosсh bfg 3000</span>
             </h3>
             <img src="img/perforator1.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 3000">
-            <span>22500 Р.</span>
-            <span>15500 Р.</span>
+            <span class="discount">22500 Р.</span>
+            <span class="price">15500 Р.</span>
           </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 6000</span>
+              <span class="number">bosсh bfg 6000</span>
             </h3>
             <img src="img/perforator2.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 6000">
-            <span>30500 Р.</span>
-            <span>25500 Р.</span>
+            <span class="discount">30500 Р.</span>
+            <span class="price">25500 Р.</span>
           </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 2000</span>
+              <span class="number">bosсh bfg 2000</span>
             </h3>
             <img src="img/perforator3.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 2000">
-            <span>12500 Р.</span>
+            <span class="price">12500 Р.</span>
           </a>
           <span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
       </ul>
     </section>
     <section>
-      <h2>Популярные производители <a href="">Все производители</a></h2>
+      <h2 class="popular">Популярные производители <a href="">Все производители</a></h2>
       <ul>
         <li><img src="img/bosch.png" width="126" height="37" alt="Эмблема марки Bosch"></li>
         <li><img src="img/makita.png" width="123" height="40" alt="Эмблема марки Makita"></li>
@@ -185,30 +185,31 @@
         <li><img src="img/metabo.png" width="204" height="69" alt="Эмблема марки Metabo"></li>
       </ul>
     </section>
-    <section>
-      <h2>Сервисы</h2>
+    <section class="service">
+      <h2 class="services">Сервисы</h2>
+      <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       <ul>
-        <li>Доставка
+        <li class="service-item">Доставка
           <ul>
-            <li>
+            <li class="service-description">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
               <img src="img/delivery.png" width="468" height="261" alt="Изображение грузовика">
             </li>
           </ul>
         </li>
-        <li>Гарантия
+        <li class="service-item">Гарантия
           <ul>
-            <li>
+            <li class="service-description">
               <h3>Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь
                 сами.</p>
             </li>
           </ul>
         </li>
-        <li>Кредит
+        <li class="service-item">Кредит
           <ul>
-            <li>
+            <li class="service-description">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
             </li>
