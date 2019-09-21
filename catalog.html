@@ -4,57 +4,60 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i,PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="/css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <!--первый блок в шапке сайта обернула в тег div, т.к. оформление отличается от другого блока в шапке, именно фон блока-->
-    <div>
+    <div class="first-navigation">
       <a href="index.html" aria-label="Переход на главную страницу сайта">
-        <span>Техномарт</span>
+        <span class="logo">Техномарт</span>
       </a>
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <img src="img/search.svg" alt="Иконка поиска">
-        <label class="search-string">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <img src="img/icon-search.svg" alt="Иконка поиска">
+        <label>
           <input type="search" id="search-string" name="search-string" aria-label="Поле поиска" placeholder="Поиск:">
         </label>
       </form>
-      <ul>
+      <ul class="first-list-navigation">
         <li>
-          <a href="">
+          <a class="bookmark" href="">
             <img src="img/icon-bookmark.svg" width="14" height="16" alt="Изображение-иконка избранного товара">Закладки:
             <span>0</span>
           </a>
         </li>
         <li>
-          <a href="">
-            <img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка избранного товара">Корзина:
+          <a class="cart" href="">
+            <img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзину">Корзина:
             <span>10</span>
           </a>
         </li>
         <li>
-          <a href="">Оформить заказ:
+          <a class="checkout" href="">Оформить заказ
           </a>
         </li>
       </ul>
     </div>
     <!--Второй блок в шапке сайта обернула в div, т.к. фон отличается от первого бока. Внутри этого блока присутствует еще один блок с навигацией
 Возможно, лучше данный блок обернуть тегом section, но тогда нужно добавить заголовок, который будет скрыт на сайте, пока оставила так-->
-    <div>
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+    <div class="second-navigation">
+      <h1 class="main-header">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <img src="img/icon-phone.svg" width="19" height="19" alt="Изображение-иконка телефона">
-      <p>+7 (812) 555-05-55</p>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="phone">+7 (812) 555-05-55</p>
+      <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <p>
-        <a href=""><img src="img/icon-user.svg" width="22" height="18" alt="Изображение-иконка авторизованного пользователя">Равшан Джамшутович</a>
+        <a class="authorized-user" href=""><img src="img/icon-user.svg" width="22" height="18" alt="Изображение-иконка авторизованного пользователя">Равшан Джамшутович</a>
         <a href=""><img src="img/icon-logout.svg" width="21" height="17" alt="Изображение-иконка выхода"></a>
       </p>
-      <ul>
+      <ul class="user-info">
         <li><a href="">Мои заказы</a></li>
+        <li><img src="img/shape_1.svg" alt="Иконка разделяющая элементы"> </li>
         <li><a href="">Личный кабинет</a></li>
       </ul>
-      <nav>
+      <nav class="main-navigation">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="">Компания</a></li>
@@ -68,7 +71,7 @@
     </div>
   </header>
   <main>
-    <ul>
+    <ul class="bread-crumbs">
       <li><a href="index.html"><img src="img/icon-home.svg" width="16" height="12" alt="Изображение-иконка главной страницы"></a>
         <img src="img/icon-right-small.svg" width="8" height="14" alt="иконка стрелка вправо"></li>
       <li><a href="">Каталог</a>
@@ -78,7 +81,7 @@
       <li>Перфораторы</li>
     </ul>
     <section>
-      <h2>Перфораторы</h2>
+      <h2 class="hammer-drill">Перфораторы</h2>
       <div>
         <h4>Сортировка:</h4>
         <ul>
@@ -94,126 +97,126 @@
       <ul>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 3000</span>
+              <span class="number">bosсh bfg 3000</span>
             </h3>
             <img src="img/perforator1.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 3000">
-            <span>22500 Р.</span>
-            <span>15500 Р.</span>
+            <span class="discount">22500 Р.</span>
+            <span class="price">15500 Р.</span>
           </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 6000</span>
+              <span class="number">bosсh bfg 6000</span>
             </h3>
             <img src="img/perforator2.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 6000">
-            <span>30500 Р.</span>
-            <span>25500 Р.</span>
+            <span class="discount">30500 Р.</span>
+            <span class="price">25500 Р.</span>
           </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 2000</span>
+              <span class="number">bosсh bfg 2000</span>
             </h3>
             <img src="img/perforator3.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 2000">
-            <span>12500 Р.</span>
+            <span class="price">12500 Р.</span>
           </a>
           <span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 3000</span>
+              <span class="number">bosсh bfg 3000</span>
             </h3>
             <img src="img/perforator1.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 3000">
-            <span>22500 Р.</span>
-            <span>15500 Р.</span>
+            <span class="discount">22500 Р.</span>
+            <span class="price">15500 Р.</span>
           </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 6000</span>
+              <span class="number">bosсh bfg 6000</span>
             </h3>
             <img src="img/perforator2.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 6000">
-            <span>30500 Р.</span>
-            <span>25500 Р.</span>
+            <span class="discount">30500 Р.</span>
+            <span class="price">25500 Р.</span>
           </a>
           <span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 2000</span>
+              <span class="number">bosсh bfg 2000</span>
             </h3>
             <img src="img/perforator3.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 2000">
-            <span>12500 Р.</span>
+            <span class="price">12500 Р.</span>
           </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 3000</span>
+              <span class="number">bosсh bfg 3000</span>
             </h3>
             <img src="img/perforator1.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 3000">
-            <span>22500 Р.</span>
-            <span>15500 Р.</span>
+            <span class="discount">22500 Р.</span>
+            <span class="price">15500 Р.</span>
           </a>
           <span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 6000</span>
+              <span class="number">bosсh bfg 6000</span>
             </h3>
             <img src="img/perforator2.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 6000">
-            <span>30500 Р.</span>
-            <span>25500 Р.</span>
+            <span class="discount">30500 Р.</span>
+            <span class="price">25500 Р.</span>
           </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
         <li>
           <a href="">
-            <h3>
+            <h3 class="drill">
               <span>Перфоратор</span>
-              <span>bosсh bfg 2000</span>
+              <span class="number">bosсh bfg 2000</span>
             </h3>
             <img src="img/perforator3.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 2000">
-            <span>12500 Р.</span>
+            <span class="price">12500 Р.</span>
           </a>
           <!--<span><img src="img/new-flag.png" width="60" height="59" alt="отметка новинка на товаре"></span>-->
-          <button type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-          <button type="submit" name="bookmark">В закладки</button>
+          <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
+          <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
         </li>
       </ul>
       <div>
@@ -234,7 +237,7 @@
       <h4>Фильтр:</h4>
       <form class="filter" action="http://www.example.com/default.htm" method="get">
         <fieldset>
-          <legend>Цена:</legend>
+          <legend class="filter-blocks">Цена:</legend>
           <img src="img/filter-button.svg" alt="кнопка ползунка">
           <label class="price"><input type="range" name="price" min="0" max="30000" step="1"></label>
           <img src="img/filter-button.svg" alt="кнопка ползунка">
@@ -243,7 +246,7 @@
           <label class="max-price"><input type="text" name="max-price" value="30000"></label>
         </fieldset>
         <fieldset>
-          <legend>Производители:</legend>
+          <legend class="filter-blocks">Производители:</legend>
           <ul>
             <li class="filter-option">
               <input id="Bosh" class="visually-hidden" type="checkbox" name="Bosh">
@@ -278,7 +281,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Питание:</legend>
+          <legend class="filter-blocks">Питание:</legend>
           <ul>
             <li class="filter-option">
               <input id="accumulator" class="visually-hidden" type="radio" name="radio">
@@ -294,32 +297,32 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit" name="show">Показать</button>
+        <button class="show" type="submit" name="show">Показать</button>
       </form>
     </section>
   </main>
   <footer>
-    <div>
+    <div class="first-footer">
       <a href="index.html" aria-label="Переход на главную страницу сайта">
-        <span>Техномарт</span>
+        <span class="logo">Техномарт</span>
       </a>
       <ul>
-        <li><a href="">Компания</a></li>
-        <li><a href="">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Контакты</a></li>
+        <li><a class="fist-footer-list" href="">Компания</a></li>
+        <li><a class="fist-footer-list" href="">Новости</a></li>
+        <li><a class="fist-footer-list" href="catalog.html">Каталог</a></li>
+        <li><a class="fist-footer-list" href="">Доставка</a></li>
+        <li><a class="fist-footer-list" href="">Контакты</a></li>
       </ul>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+      <p class="adress-company">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
       <ul>
-        <li><a href="">Материалы</a></li>
-        <li><a href="">Техника</a></li>
-        <li><a href="">Инструмент</a></li>
-        <li><a href="">Спецпредложения</a></li>
+        <li><a class="second-footer-list" href="">Материалы</a></li>
+        <li><a class="second-footer-list" href="">Техника</a></li>
+        <li><a class="second-footer-list" href="">Инструмент</a></li>
+        <li><a class="second-footer-list" href="">Спецпредложения</a></li>
       </ul>
     </div>
-    <div>
-      <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+    <div class="second-footer">
+      <p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
       <ul>
         <li>
           <a href=""><img src="img/icon-vk.svg" width="27" height="16" alt="Изображение-иконка вконтакте"></a>
@@ -331,12 +334,15 @@
           <a href=""><img src="img/icon-insta.svg" width="21" height="21" alt="Изображение-иконка instagram"></a>
         </li>
       </ul>
-      <p>Обратная связь: mail@htmlacademy.ru</p>
-      <p>Разработано —
-        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Страница профессионального онлайн‑курса HTML и CSS, уровень 1">htmlacademy.ru</a></p>
+      <dl>
+        <dt>Обратная связь:</dt>
+        <dd><a href="e-mail">mail@htmlacademy.ru</a></dd>
+        <dt>Разработано —</dt>
+        <dd><a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Страница профессионального онлайн‑курса HTML и CSS, уровень 1">htmlacademy.ru</a></dd>
+      </dl>
     </div>
   </footer>
-  <section>
+  <section class="added-to-cart">
     <h2 class="visually-hidden">Товар добавлен в корзину</h2>
     <p><img src="img/icon-mark.svg" width="66" height="66" alt="Изображение-иконка добавления">Товар добавлен в корзину!</p>
     <button type="button" name="close"><img src="img/icon-close.svg" width="21" height="21" alt="Изображение крестика для закрытия формы"></button>
