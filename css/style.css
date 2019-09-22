@@ -37,23 +37,16 @@ ul {
 }
 
 .logo {
-  font-size: 19px;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #ed3543;
-}
-
-footer .logo {
-  font-size: 23px;
+  background-color: #ee3643;
+  ;
 }
 
 a .logo:hover {
-  background-color: #ca2b36;
+  background-color: #ca2c37;
 }
 
 a .logo:focus {
-  background-color: #ba2731;
+  background-color: #ba2732;
 }
 
 input[type="search"] {
@@ -549,10 +542,9 @@ li label {
   text-transform: uppercase;
 }
 
-.service p {
+.common-advantage {
   font-size: 13px;
   font-family: "PT Sans", "Arial", "sans-serif";
-  color: #000000;
   text-align: left;
 }
 
@@ -580,8 +572,13 @@ li label {
   text-transform: uppercase;
 }
 
-.service-description p {
+body .advantage-local {
+  font-size: 13px;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-weight: 400;
+  text-align: left;
+  line-height: 24px;
+  color: #000000;
 }
 
 /*Конец разметки блока сервиса*/
@@ -601,6 +598,7 @@ li label {
 
 .delivery {
   font-size: 18px;
+  line-height: 20px;
   text-align: left;
 }
 
