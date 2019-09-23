@@ -572,13 +572,21 @@ li label {
   text-transform: uppercase;
 }
 
-body .advantage-local {
+.advantage-local {
   font-size: 13px;
   font-family: "PT Sans", "Arial", "sans-serif";
   font-weight: 400;
   text-align: left;
   line-height: 24px;
   color: #000000;
+}
+
+.send-request {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ff5357;
+  border: none;
 }
 
 /*Конец разметки блока сервиса*/
