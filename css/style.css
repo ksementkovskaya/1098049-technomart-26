@@ -32,13 +32,9 @@ ul {
 
 /*Конец глобальных настроек*/
 /*Шапка сайта*/
-.first-navigation {
-  background-color: #293349;
-}
-
 .logo {
+  padding: 13px 55px 10px 56px;
   background-color: #ee3643;
-  ;
 }
 
 a .logo:hover {
@@ -49,8 +45,20 @@ a .logo:focus {
   background-color: #ba2732;
 }
 
+.icon-search {
+  padding-right: 12px;
+  padding-left: 16px;
+}
+
+.footer-logo .logo {
+  padding: 20px 41px 25px 41px;
+}
+
 input[type="search"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-size: 17px;
+  font-family: "Cuprum", "Arial", "sans-serif";
   line-height: 18px;
   background-color: #293349;
   border: none;
@@ -76,10 +84,12 @@ input[type="search"]::-ms-input-placeholder {
   color: #ffffff;
 }
 
+.searching-form:hover,
 input[type="search"]:hover {
   background-color: #212939;
 }
 
+.searching-form:focus,
 input[type="search"]:focus {
   background-color: #ffffff;
 }
@@ -114,31 +124,39 @@ input[type="search"]:focus {
   background-color: #508534;
 }
 
-.second-navigation {
-  background-color: #f3f7f8;
-}
-
 .main-header {
-  width: 196px;
-  height: 61px;
+  padding-left: 51px;
   font-size: 16px;
+  font-weight: 400;
   line-height: 23px;
   color: #ee3643;
   font-style: italic;
   text-align: left;
 }
 
-.phone {
+.icon-phon {
+  padding-right: 32px;
+  padding-left: 13px;
+}
+
+.phon {
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 09px;
+  display: inline-block;
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
-  text-align: center;
+}
+
+.info-phon {
   border: 3px solid #ffffff;
-  width: 270px;
-  height: 45px;
 }
 
 .adress {
+  margin: 0;
+  padding-top: 5px;
+  line-height: 21px;
   text-align: center;
   color: #32425c;
 }
@@ -179,10 +197,27 @@ input[type="search"]:focus {
   color: #b2b2b2;
 }
 
+.user p {
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  background-color: #ffffff;
+}
+
 .authorized-user {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+}
+
+.authorized-user img {
+  padding-right: 13px;
+  padding-left: 13px;
+}
+
+.icon-logout {
+  padding-right: 10px;
+  padding-left: 30px;
 }
 
 .user-info a {
@@ -592,6 +627,7 @@ li label {
 /*Конец разметки блока сервиса*/
 /* Блок о компании и конаткты */
 .header-company {
+  margin-top: 0;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
@@ -605,12 +641,19 @@ li label {
 }
 
 .delivery {
+  margin-bottom: 36px;
   font-size: 18px;
   line-height: 20px;
   text-align: left;
 }
 
+.dash {
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
 .more-about-company {
+  padding: 14px 40px 12px 41px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
@@ -618,6 +661,7 @@ li label {
 }
 
 .header-contacts {
+  margin-top: 0;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
@@ -631,6 +675,7 @@ li label {
 }
 
 .write-to-us {
+  padding: 14px 59px 12px 53px;
   font-family: "Cuprum", "Arial", "sans-serif";
   line-height: 18px;
   text-align: center;
@@ -711,3 +756,233 @@ dl a:focus {
 .feedback-form, .added-to-cart {
   display: none;
 }
+
+/*Сеточные стили*/
+html,
+body {
+  min-width: 1200px;
+  min-height: 3151px;
+}
+
+.first-navigation-wrapper {
+  width: 1200px;
+  background-color: #293349;
+}
+
+.first-navigation {
+  margin: 0 auto;
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 220px;
+  height: 42px;
+}
+
+.searching-form {
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  min-height: 42px;
+}
+
+.first-list-navigation {
+  width: 450px;
+  margin: 0;
+  padding: 0;
+  min-height: 42px;
+}
+
+.second-navigation-wrapper {
+  padding-top: 46px;
+  padding-bottom: 60px;
+  width: 1200px;
+  min-height: 280px;
+  background-color: #f3f7f8;
+}
+
+.second-navigation {
+  margin: 0 auto;
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-header {
+  width: 200px;
+  height: 70px;
+}
+
+.info {
+  width: 270px;
+  min-height: 45px;
+}
+
+.user-navigation {
+  width: 300px;
+  min-height: 45px;
+}
+
+.main-navigation {
+  width: 940px;
+  min-height: 60px;
+}
+
+.user {
+  width: 300px;
+  min-height: 46px;
+}
+
+.user-info {
+  width: 210px;
+  min-height: 14px;
+}
+
+.about-company-wrapper {
+  width: 940px;
+  margin-top: 80px;
+  margin-bottom: 86px;
+  padding-right: 130px;
+  padding-left: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company {
+  margin: 0;
+  padding: 0;
+  width: 540px;
+  min-height: 370px;
+}
+
+.company-contacts {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  min-height: 370px;
+}
+
+.first-footer {
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 48px;
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  width: 220px;
+  height: 64px;
+}
+
+.first-footer-navigation {
+  padding: 0;
+  margin: 0;
+  width: 550px;
+  min-height: 64px;
+}
+
+.adress-company {
+  padding: 0;
+  margin: 0;
+  width: 330px;
+  min-height: 55px;
+}
+
+.second-footer-navigation {
+  width: 540px;
+  min-height: 42px;
+}
+
+.second-footer {
+  padding-right: 130px;
+  padding-bottom: 32px;
+  padding-left: 130px;
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  padding: 0;
+  margin: 0;
+  width: 230px;
+  min-height: 42px;
+}
+
+.social-info {
+  padding: 0;
+  margin: 0;
+  width: 133px;
+  min-height: 45px;
+}
+
+.feedback-info {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  min-height: 47px;
+}
+
+.bread-crumbs {
+  padding: 0;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 130px;
+  width: 380px;
+  min-height: 12px;
+}
+
+.hammer-drill {
+  margin: 0;
+  margin-left: 130px;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  padding-left: 30px;
+  width: 910px;
+  min-height: 23px;
+}
+
+.catalog-columns {
+  padding-right: 130px;
+  padding-left: 130px;
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-block {
+  width: 220px;
+  min-height: 747px;
+}
+
+.catalog {
+  width: 700px;
+  min-height: 994px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.catalog-item {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 220px;
+  min-height: 318px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+/*Конец сеточных стилей*/
