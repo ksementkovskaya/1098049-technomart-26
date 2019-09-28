@@ -9,7 +9,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="one">
   <header class="main-header-block">
     <div class="first-navigation-wrapper">
       <div class="first-navigation">
@@ -22,17 +22,16 @@
             <input type="search" name="search-string" placeholder="Поиск:">
           </label>
         </form>
-
         <ul class="first-list-navigation">
           <li>
             <a class="bookmark" href="">
-              <img src="img/icon-bookmark.svg" width="14" height="16" alt="Изображение-иконка избранного товара">Закладки:
+              <img class="img-bookmark" src="img/icon-bookmark.svg" width="14" height="16" alt="Изображение-иконка избранного товара">Закладки:
               <span>0</span>
             </a>
           </li>
           <li>
             <a class="cart" href="">
-              <img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Корзина:
+              <img class="img-cart" src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Корзина:
               <span>0</span>
             </a>
           </li>
@@ -54,21 +53,21 @@
         </div>
         <ul class="user-navigation">
           <li>
-            <button class="login" type="button" name="login"><img src="img/icon-login.svg" width="21" height="17" alt="Изображение-иконка входа авторизованным пользователем">Войти</button>
+            <button class="login" type="button" name="login"><img class="icon-login" src="img/icon-login.svg" width="21" height="17" alt="Изображение-иконка входа авторизованным пользователем">Войти</button>
           </li>
           <li>
             <button class="registration" type="button" name="registration">Регистрация</button>
           </li>
         </ul>
         <nav class="main-navigation">
-          <ul>
-            <li>Главная</li>
-            <li><a href="">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="">Новости</a></li>
-            <li><a href="">Спецпредложения</a></li>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Контакты</a></li>
+          <ul class="main-navigation-list">
+            <li><a class="list-main-navigation">Главная</a></li>
+            <li><a class="list-main-navigation" href="">Компания</a></li>
+            <li><a class="list-main-navigation" href="catalog.html">Каталог</a></li>
+            <li><a class="list-main-navigation" href="">Новости</a></li>
+            <li><a class="list-main-navigation" href="">Спецпредложения</a></li>
+            <li><a class="list-main-navigation" href="">Доставка</a></li>
+            <li><a class="list-main-navigation" href="">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -251,44 +250,47 @@
     </div>
   </main>
   <footer>
-    <div class="first-footer">
-      <a class="footer-logo">
-        <img class="logo" src="img/logo.svg" width="138" height="23" alt="Логотип «Техномарт»">
-      </a>
-      <ul class="first-footer-navigation">
-        <li><a class="fist-footer-list" href="">Компания</a></li>
-        <li><a class="fist-footer-list" href="">Новости</a></li>
-        <li><a class="fist-footer-list" href="catalog.html">Каталог</a></li>
-        <li><a class="fist-footer-list" href="">Доставка</a></li>
-        <li><a class="fist-footer-list" href="">Контакты</a></li>
-      </ul>
-      <p class="adress-company">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
-      <ul class="second-footer-navigation">
-        <li><a class="second-footer-list" href="">Материалы</a></li>
-        <li><a class="second-footer-list" href="">Техника</a></li>
-        <li><a class="second-footer-list" href="">Инструмент</a></li>
-        <li><a class="second-footer-list" href="">Спецпредложения</a></li>
-      </ul>
+    <div class="footer-wrapper">
+      <div class="first-footer">
+        <a class="footer-logo">
+          <img class="logo" src="img/logo.svg" width="138" height="23" alt="Логотип «Техномарт»">
+        </a>
+        <ul class="first-footer-navigation">
+          <li><a class="fist-footer-list" href="">Компания</a></li>
+          <li><a class="fist-footer-list" href="">Новости</a></li>
+          <li><a class="fist-footer-list" href="catalog.html">Каталог</a></li>
+          <li><a class="fist-footer-list" href="">Доставка</a></li>
+          <li><a class="fist-footer-list" href="">Контакты</a></li>
+        </ul>
+        <p class="adress-company">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+        <ul class="second-footer-navigation">
+          <li><a class="second-footer-list" href="">Материалы</a></li>
+          <li><a class="second-footer-list" href="">Техника</a></li>
+          <li><a class="second-footer-list" href="">Инструмент</a></li>
+          <li><a class="second-footer-list" href="">Спецпредложения</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="second-footer">
-      <p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
-      <ul class="social-info">
-        <li>
-          <a href=""><img src="img/icon-vk.svg" width="27" height="16" alt="Изображение-иконка вконтакте"></a>
-        </li>
-        <li>
-          <a href=""><img src="img/icon-fb.svg" width="12" height="22" alt="Изображение-иконка facebook"></a>
-        </li>
-        <li>
-          <a href=""><img src="img/icon-insta.svg" width="21" height="21" alt="Изображение-иконка instagram"></a>
-        </li>
-      </ul>
-      <dl class="feedback-info">
-        <dt>Обратная связь:</dt>
-        <dd><a href="e-mail">mail@htmlacademy.ru</a></dd>
-        <dt>Разработано —</dt>
-        <dd><a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Страница профессионального онлайн‑курса HTML и CSS, уровень 1">htmlacademy.ru</a></dd>
-      </dl>
+
+    <div class="second-footer-wrapper">
+      <div class="second-footer">
+        <p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        <ul class="social-info">
+          <li>
+            <a href=""><img src="img/vk-icon.png" width="42" height="42" alt="Изображение-иконка вконтакте"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/fb-icon.png" width="42" height="42" alt="Изображение-иконка facebook"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/insta-icon.png" width="42" height="42" alt="Изображение-иконка instagram"></a>
+          </li>
+        </ul>
+        <div class="feedback-info">
+          <p class="feedback-item">Обратная связь: <a class="feedback-value" href="e-mail">mail@htmlacademy.ru</a></p>
+          <p class="feedback-item">Разработано —<a class="feedback-value" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Страница профессионального онлайн‑курса HTML и CSS, уровень 1">htmlacademy.ru</a></p>
+        </div>
+      </div>
     </div>
   </footer>
   <section class="feedback-form">
