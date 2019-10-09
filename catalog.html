@@ -52,12 +52,9 @@
           </div>
           <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <div class="navigation-wrapper-catalog">
+        <div class="user-block">
           <div class="user">
-            <p>
-              <a class="authorized-user" href="">Равшан Джамшутович</a>
-              <a href=""></a>
-            </p>
+            <a class="authorized-user" href="">Равшан Джамшутович</a>
           </div>
           <ul class="user-info">
             <li><a href="">Мои заказы</a></li>
@@ -81,26 +78,32 @@
   </header>
   <main>
     <ul class="bread-crumbs">
-      <li><a class="crumb" href="index.html"><img src="img/icon-home.svg" width="16" height="12" alt="Изображение-иконка главной страницы"></a>
+      <li><a href="index.html"><img class="icon-home" src="img/icon-home.svg" width="16" height="12" alt="Изображение-иконка главной страницы"></a>
         <img class="icon-right-small" src="img/icon-right-small.svg" width="8" height="14" alt="иконка стрелка вправо"></li>
       <li><a class="crumb" href="">Каталог</a>
         <img class="icon-right-small" src="img/icon-right-small.svg" width="8" height="14" alt="иконка стрелка вправо"></li>
-      <li><a class="crumb" href="">Инструмент</a>
+      <li><a class="crumb-2" href="">Инструмент</a>
         <img class="icon-right-small" src="img/icon-right-small.svg" width="8" height="14" alt="иконка стрелка вправо"></li>
-      <li>Перфораторы</li>
+      <li class="cramb-3">Перфораторы</li>
     </ul>
     <h2 class="hammer-drill">Перфораторы</h2>
     <div class="sorting-tools">
-      <span class="filter">Фильтр</span>
+      <span class="filter">Фильтр:</span>
       <div class="sorting">
-        <h4>Сортировка:</h4>
+        <h4 class="sorting-title">Сортировка:</h4>
         <ul class="sorting-list">
           <li><a class="type-sorting" href="">По цене</a></li>
           <li><a class="type-sorting" href="">По типу</a></li>
-          <li><a class="type-sorting" href="">По функционалу</a></li>
+          <li><a class="type-sorting for-panding" href="">По функционалу</a></li>
           <li>
-            <a href=""><img src="img/icon-up-dir.svg" width="11" height="10" alt="Кнопка отбора по возрастанию"></a>
-            <a href=""><img src="img/icon-down-dir.svg" width="11" height="10" alt="Кнопка отбора по убыванию"></a>
+            <a class="sorting-up" href="" aria-label="копка сортировки по возрастанию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
+            </a>
+            <a class="sorting-down" href="" aria-label="копка сортировки по убыванию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -110,19 +113,27 @@
         <h4 class="visually-hidden">Фильтр:</h4>
         <form class="form-filter" action="http://www.example.com/default.htm" method="get">
           <fieldset class="fieldset">
-            <legend class="filter-blocks">Цена:</legend>
-            <img src="img/filter-button.svg" alt="кнопка ползунка">
-            <label class="range"><input type="range" name="price" min="0" max="30000" step="1"></label>
-            <img src="img/filter-button.svg" alt="кнопка ползунка">
-            <label class="min-price"><input type="text" name="min-price" value="0"></label>
-            <span class="dash">-</span>
-            <label class="max-price"><input type="text" name="max-price" value="30000"></label>
+            <legend class="filter-blocks price-block">Цена:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"style="margin-left: 0%; width: 80%"></div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price"><input type="text" name="min-price" value="0"><span class="dash">—<span></label>
+
+                <label class="max-price"><input type="text" name="max-price" value="30000"></label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="fieldset">
             <legend class="filter-blocks">Производители:</legend>
             <ul>
               <li class="filter-option">
-                <input id="Bosch" class="visually-hidden checkbox-input" type="checkbox" name="Bosch">
+                <input id="Bosch" class="visually-hidden checkbox-input" type="checkbox" name="Bosch" checked>
                 <label for="Bosch">Bosch</label>
               </li>
               <li class="filter-option">
@@ -130,7 +141,7 @@
                 <label for="Interscol">Интерскол</label>
               </li>
               <li class="filter-option">
-                <input id="Makita" class="visually-hidden checkbox-input" type="checkbox" name="Makita">
+                <input id="Makita" class="visually-hidden checkbox-input" type="checkbox" name="Makita" checked>
                 <label for="Makita">Makita</label>
               </li>
               <li class="filter-option">
@@ -144,10 +155,10 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend class="filter-blocks">Питание:</legend>
+            <legend class="filter-blocks padding-for-block">Питание:</legend>
             <ul>
               <li class="filter-option">
-                <input id="accumulator" class="visually-hidden radio-button" type="radio" name="radio">
+                <input id="accumulator" class="visually-hidden radio-button" type="radio" name="radio" checked>
                 <label for="accumulator">Аккумуляторные</label>
               </li>
               <li class="filter-option">
@@ -156,7 +167,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="show" type="submit" name="show">Показать</button>
+          <button class="button-show" type="submit" name="show">Показать</button>
         </form>
       </section>
       <section class="catalog">
@@ -306,17 +317,16 @@
       </section>
     </div>
     <div class="pagination">
-      <ul>
-        <li class="pagination-list">1</li>
-        <li><a class="pagination-list" href="" aria-label="Переход на вторую страницу каталога">2</a></li>
-        <li><a class="pagination-list" href="" aria-label="Переход на третью страницу каталога">3</a></li>
-        <li><a class="pagination-list" href="" aria-label="Переход на следующую страницу каталога">Следующая</a></li>
+      <ul class="pagination-list">
+        <li><a class="pagination-item active-page">1</a></li>
+        <li><a class="pagination-item" href="" aria-label="Переход на вторую страницу каталога">2</a></li>
+        <li><a class="pagination-item" href="" aria-label="Переход на третью страницу каталога">3</a></li>
+        <li><a class="pagination-item next-page" href="" aria-label="Переход на следующую страницу каталога">Следующая</a></li>
       </ul>
     </div>
     <section class="about-drill">
       <h4>Пара слов о перфораторах</h4>
-      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
-        шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br> ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </section>
   </main>
   <footer>

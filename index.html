@@ -42,7 +42,7 @@
         </ul>
       </div>
     </div>
-    <div class="second-navigation-wrapper  navigation-wrapper-catalog">
+    <div class="second-navigation-wrapper">
       <div class="second-navigation">
         <h1 class="main-header">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
         <div class="info">
@@ -61,7 +61,7 @@
         </ul>
         <nav class="main-navigation">
           <ul class="main-navigation-list">
-            <li><a class="list-main-navigation">Главная</a></li>
+            <li><a class="list-main-navigation main-1">Главная</a></li>
             <li><a class="list-main-navigation" href="">Компания</a></li>
             <li><a class="list-main-navigation" href="catalog.html">Каталог</a></li>
             <li><a class="list-main-navigation" href="">Новости</a></li>
@@ -77,163 +77,174 @@
     <section class="promoblock">
       <h2 class="visually-hidden">Промоблок</h2>
       <div class="material">
-        <h3>Материалы</h3>
-        <img src="img/icon-material.svg" width="44" height="65" alt="Изображение-иконка материалы">
-        <span><img src="img/new-flag.png" width="60" height="59" alt="Отметка новинка"></span>
-        <a class="every-taste" href="">На любой вкус</a>
+        <h3 class="title-promoblok">Материалы</h3>
+        <span class="flag"><img src="img/new-flag.png" width="60" height="59" alt="Отметка новинка"></span>
+        <a class="for-all-promoblok" href="">На любой вкус</a>
       </div>
       <div class="tools">
-        <h3>Инструмент</h3>
-        <img src="img/icon-tool.svg" width="75" height="61" alt="Изображение-иконка инструмента">
-        <a href="">На все случаи</a>
+        <h3 class="title-promoblok">Инструмент</h3>
+        <a class="for-all-promoblok" href="">На все случаи</a>
       </div>
       <div class="technics">
-        <h3>Техника</h3>
-        <img src="img/icon-equipment.svg" width="78" height="62" alt="Изображение-иконка спец.техники">
-        <a href="">Для стройки</a>
+        <h3 class="title-promoblok">Техника</h3>
+        <a class="for-all-promoblok" href="">Для стройки</a>
       </div>
-      <div class="discounts">
-        <h3>Скидки</h3>
-        <img src="img/icon-bascet.svg" width="59" height="73" alt="Изображение-иконка корзины">
-        <a href="">На 350 товаров</a>
+      <div class="wrapper-discount-delivery">
+        <div class="discounts">
+          <h3 class="title-promoblok">Скидки 50%</h3>
+          <a class="for-all-promoblok" href="">На 350 товаров</a>
+        </div>
+        <div class="about-delivery">
+          <h3 class="title-promoblok">Доставка</h3>
+          <a class="for-all-promoblok" href="">Бесплатно</a>
+        </div>
       </div>
-      <div class="about-delivery">
-        <h3>Доставка</h3>
-        <img src="img/icon-delivery.svg" width="78" height="63" alt="Изображение-иконка грузовика">
-        <a href="">Бесплатно</a>
-      </div>
-      <div class="slider">
-        <h3>Дрели</h3>
-        <p>Соседям на радость!</p>
-        <h4 class="visually-hidden">Слайдер</h4>
-        <img src="img/icon-left.svg" width="22" height="40" alt="На изображени стрелка влево">
-        <img src="img/icon-right.svg" width="22" height="40" alt="На изображении стрелка вправо">
-        <a class="open-catalog" href="catalog.html" aria-label="Ссылка ведет на страницу каталога">Открыть каталог</a>
-        <label><input type="radio" id="btn1" name="toggle" aria-label="радио кнопка для смены изображения"></label>
-        <label><input type="radio" id="btn2" name="toggle" aria-label="радио кнопка для смены изображения" checked></label>
-        <div class="slider-inner">
-          <div class="slider-slides">
-            <img src="img/slider1.jpg" width="620" height="266" alt="На изображении человек просвериливает фанеру перфоратором">
-            <img src="img/slider2.jpg" width="620" height="266" alt="На изображении человек просвериливает кирпичную стену перфоратором">
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <div class="slide-wrapper">
+        <div class="slider">
+          <div class="slider-controls">
+            <label class="toggle toggle-1" for="product-1">Первый</label>
+            <label class="toggle toggle-2" for="product-2">Второй</label>
           </div>
+          <div class="slider-arrow-right">
+            <label class="right-arrow" for="product-2">Второй</label>
+          </div>
+          <div class="slider-arrow-left">
+            <label class="left-arrow" for="product-1">Первый</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">Перфораторы</h3>
+              <p class="description">Настоящие мужские игрушки</p>
+              <a class="button-open-catalog slide-button" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">Дрели</h3>
+              <p class="description">Соседям на радость!</p>
+              <a class="button-open-catalog slide-button" href="catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
-    <section class="visually-hidden">
-      <h2 class="popular">Популярные товары <a href="">Все популярные товары</a></h2>
-      <ul>
-        <li>
-          <a href="">
-            <h3 class="drill">
-              <span>Перфоратор</span>
-              <span class="number">bosсh bfg 9000</span>
-            </h3>
-            <img class="image-product" src="img/perforator4.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 9000">
-            <span class="discount">32500 Р.</span>
-            <span class="price">25500 Р.</span>
-          </a>
-          <!--<div class="flag"><img src="img/new-flag.png" width="60" height="59" alt="отметка - новинка на товаре">-->
-          <div class="actions">
-            <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-            <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
-          </div>
-        </li>
-        <li>
-          <a href="">
-            <h3 class="drill">
-              <span>Перфоратор</span>
-              <span class="number">bosсh bfg 3000</span>
-            </h3>
-            <img class="image-product" src="img/perforator1.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 3000">
-            <span class="discount">22500 Р.</span>
-            <span class="price">15500 Р.</span>
-          </a>
-          <!--<div class="flag"><img src="img/new-flag.png" width="60" height="59" alt="отметка - новинка на товаре">-->
-          <div class="actions">
-            <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-            <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
-          </div>
-        </li>
-        <li>
-          <a href="">
-            <h3 class="drill">
-              <span>Перфоратор</span>
-              <span class="number">bosсh bfg 6000</span>
-            </h3>
-            <img class="image-product" src="img/perforator2.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 6000">
-            <span class="discount">30500 Р.</span>
-            <span class="price">25500 Р.</span>
-          </a>
-          <!--<div class="flag"><img src="img/new-flag.png" width="60" height="59" alt="отметка - новинка на товаре">-->
-          <div class="actions">
-            <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-            <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
-          </div>
-        </li>
-        <li>
-          <a href="">
-            <h3 class="drill">
-              <span>Перфоратор</span>
-              <span class="number">bosсh bfg 2000</span>
-            </h3>
-            <img class="image-product" src="img/perforator3.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 2000">
-            <span class="price">12500 Р.</span>
-          </a>
-          <div class="flag"><img src="img/new-flag.png" width="60" height="59" alt="отметка - новинка на товаре"></div>
-          <div class="actions">
-            <button class="buy" type="button" name="cart"><img src="img/icon-cart.svg" width="15" height="15" alt="Изображение-иконка корзины">Купить</button>
-            <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
-          </div>
-        </li>
-      </ul>
+    <section>
+      <div class="wrapper-title-popular">
+        <h2 class="popular">Популярные товары:<a href="">Все популярные товары</a></h2>
+      </div>
+      <div class="popular-item">
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a href="">
+              <h3 class="drill">
+                <span>Перфоратор</span>
+                <span class="number">bosсh bfg 9000</span>
+              </h3>
+              <img class="image-product" src="img/perforator4.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 9000">
+              <span class="discount">32500 Р.</span>
+              <span class="price">25500 Р.</span>
+            </a>
+            <!--<div class="flag"><img src="img/new-flag.png" width="60" height="59" alt="отметка - новинка на товаре">-->
+            <div class="actions">
+              <button class="buy" type="button" name="cart">Купить</button>
+              <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="">
+              <h3 class="drill">
+                <span>Перфоратор</span>
+                <span class="number">bosсh bfg 3000</span>
+              </h3>
+              <img class="image-product" src="img/perforator1.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 3000">
+              <span class="discount">22500 Р.</span>
+              <span class="price">15500 Р.</span>
+            </a>
+            <!--<div class="flag"><img src="img/new-flag.png" width="60" height="59" alt="отметка - новинка на товаре">-->
+            <div class="actions">
+              <button class="buy" type="button" name="cart">Купить</button>
+              <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="">
+              <h3 class="drill">
+                <span>Перфоратор</span>
+                <span class="number">bosсh bfg 6000</span>
+              </h3>
+              <img class="image-product" src="img/perforator2.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 6000">
+              <span class="discount">30500 Р.</span>
+              <span class="price">25500 Р.</span>
+            </a>
+            <!--<div class="flag"><img src="img/new-flag.png" width="60" height="59" alt="отметка - новинка на товаре">-->
+            <div class="actions">
+              <button class="buy" type="button" name="cart">Купить</button>
+              <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="">
+              <h3 class="drill">
+                <span>Перфоратор</span>
+                <span class="number">bosсh bfg 2000</span>
+              </h3>
+              <img class="image-product" src="img/perforator3.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 2000">
+              <span class="price">12500 Р.</span>
+            </a>
+            <div class="flag"><img src="img/new-flag.png" width="60" height="59" alt="отметка - новинка на товаре"></div>
+            <div class="actions">
+              <button class="buy" type="button" name="cart">Купить</button>
+              <button class="in-bookmark" type="submit" name="bookmark">В закладки</button>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section>
-      <h2 class="popular">Популярные производители <a href="">Все производители</a></h2>
-      <ul>
-        <li><img src="img/bosch.png" width="126" height="37" alt="Эмблема марки Bosch"></li>
-        <li><img src="img/makita.png" width="123" height="40" alt="Эмблема марки Makita"></li>
-        <li><img src="img/dewalt.png" width="146" height="44" alt="Эмблема марки dewalt"></li>
-        <li><img src="img/interskol.png" width="200" height="88" alt="Эмблема марки Интерскол"></li>
-        <li><img src="img/hitachi.png" width="169" height="31" alt="Эмблема марки Hitachi"></li>
-        <li><img src="img/lg.png" width="121" height="73" alt="Эмблема марки LG"></li>
-        <li><img src="img/aeg.png" width="151" height="96" alt="Эмблема марки AEG power solution"></li>
-        <li><img src="img/metabo.png" width="204" height="69" alt="Эмблема марки Metabo"></li>
+      <div class="wrapper-title-popular">
+        <h2 class="popular">Популярные производители:<a href="">Все производители</a></h2>
+      </div>
+      <ul class="popular-brends-list">
+        <li class="brend-item"><a class="bosch" href=""><img src="img/bosch.png" width="126" height="37" alt="Эмблема марки Bosch"></a></li>
+        <li class="brend-item"><a class="makita" href=""><img src="img/makita.png" width="123" height="40" alt="Эмблема марки Makita"></a></li>
+        <li class="brend-item"><a class="dewalt" href=""><img src="img/dewalt.png" width="146" height="44" alt="Эмблема марки Dewalt"></a></li>
+        <li class="brend-item"><a class="interskol" href=""><img src="img/interskol.png" width="200" height="88" alt="Эмблема марки Интерскол"></a></li>
+        <li class="brend-item"><a class="hitachi" href=""><img src="img/hitachi.png" width="169" height="31" alt="Эмблема марки Hitachi"></a></li>
+        <li class="brend-item"><a class="lg" href=""><img src="img/lg.png" width="121" height="73" alt="Эмблема марки LG"></a></li>
+        <li class="brend-item"><a class="aeg" href=""><img src="img/aeg.png" width="151" height="96" alt="Эмблема марки AEG power solution"></a></li>
+        <li class="brend-item"><a class="metabo" href=""><img src="img/metabo.png" width="204" height="69" alt="Эмблема марки Metabo"></a></li>
       </ul>
     </section>
     <section class="service">
-      <h2 class="services">Сервисы</h2>
+      <h2 class="title-service">Сервисы</h2>
       <p class="common-advantage">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul>
-        <li class="service-item">Доставка
-          <ul>
-            <li class="service-description">
-              <h3>Доставка</h3>
-              <p class="advantage-local">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-              <img src="img/delivery.png" width="468" height="261" alt="Изображение грузовика">
-            </li>
-          </ul>
-        </li>
-        <li class="service-item">Гарантия
-          <ul>
-            <li class="service-description">
-              <h3>Гарантия</h3>
-              <p class="advantage-local">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
-                восстановите как-нибудь сами.</p>
-              <img src="img/guarantee.png" width="389" height="283" alt="На изображении эмблема со 100%">
-            </li>
-          </ul>
-        </li>
-        <li class="service-item">Кредит
-          <ul>
-            <li class="service-description">
-              <h3>Кредит</h3>
-              <p class="advantage-local">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-              <button class="send-request" type="submit" name="send-request">Отправить заявку</button>
-              <img src="img/credit.png" width="465" height="285" alt="Изображение договора с деньгами">
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <input type="radio" class="visually-hidden" id="service-point-one" name="service-toggle" checked>
+      <input type="radio" class="visually-hidden" id="service-point-two" name="service-toggle">
+      <input type="radio" class="visually-hidden" id="service-point-three" name="service-toggle">
+      <div class="service-toggle">
+        <label for="service-point-one" class="service-list">Доставка</label>
+        <label for="service-point-two" class="service-list">Гарантия</label>
+        <label for="service-point-three" class="service-list">Кредит</label>
+      </div>
+      <div class="service-description">
+        <div class="service-item-delivery">
+          <h3 class="service-list-title">Доставка</h3>
+          <p class="advantage-local">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+          <img class="img-delivery" src="img/delivery.png" width="468" height="261" alt="Изображение грузовика">
+        </div>
+        <div class="service-item-guarantee">
+          <h3 class="service-list-title">Гарантия</h3>
+          <p class="advantage-local">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгоранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> Дом уж
+            восстановите как-нибудь сами.</p>
+          <img class="img-guarantee" src="img/guarantee.png" width="389" height="283" alt="На изображении эмблема со 100%">
+        </div>
+        <div class="service-item-credit">
+          <h3 class="service-list-title">Кредит</h3>
+          <p class="advantage-local">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
+          <img class="img-credit" src="img/credit.png" width="465" height="285" alt="Изображение договора с деньгами">
+          <button class="send-request" type="submit" name="send-request">Отправить заявку</button>
+        </div>
+      </div>
     </section>
     <div class="about-company-wrapper">
       <section class="company">
