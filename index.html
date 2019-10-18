@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&PT+Sans:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7cPT+Sans:400,700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/mini-style.css" rel="stylesheet">
 </head>
@@ -17,13 +17,8 @@
           <img class="logo" src="img/logo.svg" width="109" height="20" alt="Логотип «Техномарт»">
         </a>
         <form class="searching-form" action="http://www.example.com/default.htm" method="post">
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-            <path fill="#ffffff"
-              d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
-          </svg>
-          <label>
-            <input type="search" name="search-string" placeholder="Поиск:">
-          </label>
+          <input type="search" id="search" name="search-string" placeholder="Поиск:">
+          <label class="searching-label" for="search"></label>
         </form>
         <ul class="first-list-navigation">
           <li>
@@ -44,11 +39,11 @@
     </div>
     <div class="second-navigation-wrapper">
       <div class="second-navigation">
-        <h1 class="main-header">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
+        <h1 class="main-header">Интернет-магазин строительных материалов и&nbspинструментов для ремонта</h1>
         <div class="info">
           <div class="info-phon">
             <img class="icon-phon" src="img/icon-phone.svg" width="19" height="19" alt="Изображение-иконка телефона">
-            <p class="phon">+7 (812) 555-05-55</p>
+            <p class="phon"><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
           </div>
           <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
@@ -130,15 +125,14 @@
     </section>
     <section>
       <div class="wrapper-title-popular">
-        <h2 class="popular">Популярные товары:<a href="">Все популярные товары</a></h2>
+        <h2 class="popular">Популярные товары:<a class="red-button" href="">Все популярные товары</a></h2>
       </div>
       <div class="popular-item">
         <ul class="catalog-list">
           <li class="catalog-item">
             <a href="">
               <h3 class="drill">
-                <span>Перфоратор</span>
-                <span class="number">bosсh bfg 9000</span>
+                <span>Перфоратор</span><span class="number">bosсh bfg 9000</span>
               </h3>
               <img class="image-product" src="img/perforator4.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 9000">
               <span class="discount">32500 Р.</span>
@@ -153,8 +147,7 @@
           <li class="catalog-item">
             <a href="">
               <h3 class="drill">
-                <span>Перфоратор</span>
-                <span class="number">bosсh bfg 3000</span>
+                <span>Перфоратор</span><span class="number">bosсh bfg 3000</span>
               </h3>
               <img class="image-product" src="img/perforator1.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 3000">
               <span class="discount">22500 Р.</span>
@@ -169,8 +162,7 @@
           <li class="catalog-item">
             <a href="">
               <h3 class="drill">
-                <span>Перфоратор</span>
-                <span class="number">bosсh bfg 6000</span>
+                <span>Перфоратор</span><span class="number">bosсh bfg 6000</span>
               </h3>
               <img class="image-product" src="img/perforator2.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 6000">
               <span class="discount">30500 Р.</span>
@@ -185,8 +177,7 @@
           <li class="catalog-item">
             <a href="">
               <h3 class="drill">
-                <span>Перфоратор</span>
-                <span class="number">bosсh bfg 2000</span>
+                <span>Перфоратор</span><span class="number">bosсh bfg 2000</span>
               </h3>
               <img class="image-product" src="img/perforator3.png" width="218" height="170" alt="Изображение перфоратора Bosсh bfg 2000">
               <span class="price">12500 Р.</span>
@@ -202,7 +193,7 @@
     </section>
     <section>
       <div class="wrapper-title-popular">
-        <h2 class="popular">Популярные производители:<a href="">Все производители</a></h2>
+        <h2 class="popular">Популярные производители:<a class="red-button" href="">Все производители</a></h2>
       </div>
       <ul class="popular-brends-list">
         <li class="brend-item"><a class="bosch" href=""><img src="img/bosch.png" width="126" height="37" alt="Эмблема марки Bosch"></a></li>
@@ -230,15 +221,15 @@
         <div class="service-description">
           <div class="service-item-delivery">
             <h3 class="service-list-title">Доставка</h3>
-            <p class="advantage-local">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+            <p class="advantage-local">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!</p>
+            <p class="advantage-local">Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
             <img class="img-delivery" src="img/delivery.png" width="468" height="261" alt="Изображение грузовика">
           </div>
           <div class="service-item-guarantee">
             <h3 class="service-list-title">Гарантия</h3>
-            <p class="advantage-local">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгоранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на
-              новый.<br>
-              Дом уж
-              восстановите как-нибудь сами.</p>
+            <p class="advantage-local">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на
+              новый.</p>
+            <p class="advantage-local">Дом уж восстановите как-нибудь сами.</p>
             <img class="img-guarantee" src="img/guarantee.png" width="389" height="283" alt="На изображении эмблема со 100%">
           </div>
           <div class="service-item-credit">
@@ -254,22 +245,23 @@
       <section class="company">
         <h2 class="header-company">Компания «Техномарт»</h2>
         <p class="about-company">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p class="about-company more-about">Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
+        <p class="about-company more-about">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+        <p class="about-company more">Техномарт работает со многими транспортными компаниями:</p>
         <ul class="delivery">
-          <li class="item-delivery shift-down"><img class="dash" src="img/dash.png" width="25" height="2" alt="Тире">Деловые линии</li>
-          <li class="item-delivery shift-down"><img class="dash" src="img/dash.png" width="25" height="2" alt="Тире">Автотрейдин</li>
+          <li class="item-delivery"><img class="dash" src="img/dash.png" width="25" height="2" alt="Тире">Деловые линии</li>
+          <li class="item-delivery"><img class="dash" src="img/dash.png" width="25" height="2" alt="Тире">Автотрейдинг</li>
           <li class="item-delivery"><img class="dash" src="img/dash.png" width="25" height="2" alt="Тире">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="more-about-company" href="">Подробнее о компании</a>
+        <a class="more-about-company red-button" href="">Подробнее о компании</a>
       </section>
       <section class="company-contacts">
         <h2 class="header-contacts">Контакты</h2>
         <p class="pick-up">Вы можете забрать товар сами, заехав в наш офис:
-          <a class="map-popup" href="map.html">
+          <a class="map-popup" href="">
             <img class="map" src="img/map-image.png" width="300" height="158" alt="Изображение магазина на карте: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
           </a>
         </p>
-        <button class="write-to-us" type="button" name="writetous">Заблудились? Напишите нам!</button>
+        <button class="write-to-us red-button" type="button" name="writetous">Заблудились? Напишите нам!</button>
       </section>
     </div>
   </main>
@@ -288,7 +280,7 @@
             <li><a class="fist-footer-list" href="">Контакты</a></li>
           </ul>
         </div>
-        <p class="adress-company">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+        <p class="adress-company">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <div class="wrapper-another-padding">
           <ul class="second-footer-navigation">
             <li><a class="second-footer-list" href="">Материалы</a></li>
@@ -364,14 +356,15 @@
   </section>
   <section class="modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
+    <button class="modal-close iframe-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
       width="940" height="446" allowfullscreen></iframe>
-    <div class="crop"><img src="img/big-map.png" width="1736" height="779" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button></div>
+    <div class="crop"><img src="img/big-map.png" width="1736" height="779" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></div>
   </section>
   <script type="text/javascript" src="js/popup-feedback-form.js"></script>
   <script type="text/javascript" src="js/modal-map.js"></script>
+  <script type="text/javascript" src="js/modal-cart.js"></script>
 </body>
 
 </html>
