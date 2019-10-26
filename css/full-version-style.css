@@ -1,3 +1,4 @@
+
 /* Глобальные настройки */
 html,
 body {
@@ -44,7 +45,7 @@ ul {
 .header-logo {
   padding: 13px 55px 0px 56px;
   -webkit-box-shadow: 0 5px 0 0 #b52933;
-          box-shadow: 0 5px 0 0 #b52933;
+  box-shadow: 0 5px 0 0 #b52933;
   background-color: #ee3543;
 }
 
@@ -310,7 +311,6 @@ input[type="search"]:focus {
   margin-bottom: 4px;
 }
 
-
 .phon a {
   position: relative;
   width: 193px;
@@ -502,7 +502,7 @@ input[type="search"]:focus {
   background-position: 0 0;
 }
 
-.logout:focus  {
+.logout:focus {
   opacity: 0.3;
 }
 
@@ -1080,6 +1080,7 @@ fieldset {
 .price-controls label {
   display: inline-block;
   font-size: 16px;
+  vertical-align: middle;
   text-transform: uppercase;
 }
 
@@ -1232,22 +1233,23 @@ fieldset {
 /*Конец разметки фильтра в каталоге*/
 /*Разметка номеров страниц в каталоге*/
 .pagination {
-  margin-top: 38px;
-  margin-bottom: 68px;
-  padding-left: 722px;
+  width: 940px;
+  margin: auto;
 }
 
 .pagination-list {
-  width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 0;
+  margin-top: 38px;
+  margin-left: 240px;
+  margin-bottom: 68px;
 }
 
 .pagination-item {
@@ -2067,7 +2069,7 @@ fieldset {
   padding: 21px 41px 12px 41px;
   background-color: #ee3643;
   -webkit-box-shadow: 0 5px 0 0 #b52933;
-          box-shadow: 0 5px 0 0 #b52933;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .footer-logo:hover {
